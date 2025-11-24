@@ -1,0 +1,36 @@
+1.ros2 launch turn_on_wheeltec_robot turn_on_wheeltec_robot.launch.py
+错误分析:缺少依赖包rm_description
+错误log
+dxf@ubuntu:~/WHEELTEC_S300Pro_mini$ ros2 launch turn_on_wheeltec_robot turn_on_wheeltec_robot.launch.py
+[INFO] [launch]: All log files can be found below /home/dxf/.ros/log/2025-10-16-14-13-41-281760-ubuntu-43031
+[INFO] [launch]: Default logging verbosity is set to INFO
+[ERROR] [launch]: Caught exception in launch (see debug for traceback): "package 'rm_description' not found, searching: ['/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_std_ros2', '/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_interface', '/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_ultrasonic', '/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_slam_toolbox', '/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rviz2', '/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rrt_msg', '/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rtab', '/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rrt', '/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard', '/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_kcf', '/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_path_follow', '/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_nav2', '/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_ros2', '/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_msg', '/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_joy', '/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_cartographer', '/home/dxf/WHEELTEC_S300Pro_mini/install/web_video_server', '/home/dxf/WHEELTEC_S300Pro_mini/install/usb_cam', '/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2', '/home/dxf/WHEELTEC_S300Pro_mini/install/turn_on_wheeltec_robot', '/home/dxf/WHEELTEC_S300Pro_mini/install/slam_gmapping', '/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader', '/home/dxf/WHEELTEC_S300Pro_mini/install/serial', '/home/dxf/WHEELTEC_S300Pro_mini/install/robot_interfaces', '/home/dxf/WHEELTEC_S300Pro_mini/install/qt_ros_test', '/home/dxf/WHEELTEC_S300Pro_mini/install/orb_slam2_ros', '/home/dxf/WHEELTEC_S300Pro_mini/install/openslam_gmapping', '/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat', '/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_msgs', '/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle', '/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_driver', '/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_msgs', '/home/dxf/WHEELTEC_S300Pro_mini/install/ldlidar_stl_ros2', '/home/dxf/WHEELTEC_S300Pro_mini/install/ldlidar_sl_ros2', '/home/dxf/WHEELTEC_S300Pro_mini/install/double_lidar_fusion', '/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader_msg', '/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2', '/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera', '/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera_msgs', '/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_ros', '/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_msgs', '/home/dxf/WHEELTEC_S300Pro_mini/install/aruco', '/opt/ros/humble']"
+2.ros2 launch turn_on_wheeltec_robot wheeltec_lidar.launch.py
+错误分析:缺少boost库缺失问题
+错误log
+dxf@ubuntu:~/WHEELTEC_S300Pro_mini$ ros2 launch turn_on_wheeltec_robot wheeltec_lidar.launch.py
+[INFO] [launch]: All log files can be found below /home/dxf/.ros/log/2025-10-16-14-27-37-623541-ubuntu-45301
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [lslidar_driver_node-1]: process started with pid [45313]
+[INFO] [lslidar_driver_node-2]: process started with pid [45315]
+[ERROR] [lslidar_driver_node-1]: process has died [pid 45313, exit code 127, cmd '/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_driver/lib/lslidar_driver/lslidar_driver_node --ros-args -r __node:=lslidar_driver_node -r __ns:=/lidar_1 --params-file /home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_driver/share/lslidar_driver/params/lsx10_1.yaml'].
+[ERROR] [lslidar_driver_node-2]: process has died [pid 45315, exit code 127, cmd '/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_driver/lib/lslidar_driver/lslidar_driver_node --ros-args -r __node:=lslidar_driver_node -r __ns:=/lidar_2 --params-file /home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_driver/share/lslidar_driver/params/lsx10_2.yaml'].
+[INFO] [lidar_fusion-3]: process started with pid [45317]
+[lslidar_driver_node-1] /home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_driver/lib/lslidar_driver/lslidar_driver_node: error while loading shared libraries: libboost_thread.so.1.75.0: cannot open shared object file: No such file or directory
+[lslidar_driver_node-2] /home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_driver/lib/lslidar_driver/lslidar_driver_node: error while loading shared libraries: libboost_thread.so.1.75.0: cannot open shared object file: No such file or directory
+错误分析：权限问题
+log：
+dxf@ubuntu:~/WHEELTEC_S300Pro_mini$ ros2 launch turn_on_wheeltec_robot wheeltec_lidar.launch.py
+[INFO] [launch]: All log files can be found below /home/dxf/.ros/log/2025-10-17-10-54-48-403630-ubuntu-23935
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [lslidar_driver_node-1]: process started with pid [23962]
+[INFO] [lslidar_driver_node-2]: process started with pid [23964]
+[INFO] [lidar_fusion-3]: process started with pid [23966]
+[lslidar_driver_node-2] Lidar is M10_P 
+[lslidar_driver_node-1] Lidar is M10_P 
+[lslidar_driver_node-2] port = /dev/wheeltec_laser2, baud_rate = 500000
+[lslidar_driver_node-2] open_port /dev/wheeltec_laser2 ERROR !
+[lslidar_driver_node-1] port = /dev/wheeltec_laser1, baud_rate = 500000
+[lslidar_driver_node-1] open_port /dev/wheeltec_laser1 ERROR !
+[INFO] [lslidar_driver_node-2]: process has finished cleanly [pid 23964]
+[INFO] [lslidar_driver_node-1]: process has finished cleanly [pid 23962]

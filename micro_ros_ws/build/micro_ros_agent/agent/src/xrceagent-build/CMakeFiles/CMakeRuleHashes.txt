@@ -1,0 +1,5 @@
+# Hashes of file build rules.
+0313e2cf88ff8b0384d904229eb6e971 uagent-prefix/src/uagent-stamp/uagent-download
+2995912ad4e5497918d52ef5e200e4cc uagent-prefix/src/uagent-stamp/uagent-mkdir
+95a2535698e7522ace47c2f03c9be85a uagent-prefix/src/uagent-stamp/uagent-patch
+317c5e3bb8d9c5f55d17ba0946306f29 uagent-prefix/src/uagent-stamp/uagent-update

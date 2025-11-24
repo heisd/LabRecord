@@ -1,0 +1,4 @@
+[0.000000] (-) TimerEvent: {}
+[0.000722] (-) JobUnselected: {'identifier': 'Final_light_assembly_URDF'}
+[0.000851] (-) JobUnselected: {'identifier': 'robot_descripiton'}
+[0.001245] (-) EventReactorShutdown: {}

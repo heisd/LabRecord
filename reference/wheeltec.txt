@@ -1,0 +1,151 @@
+一·编辑nfs服务
+sudo gedit /etc/exports
+在末尾添加上被挂载的目录
+被挂载的nfs目录
+/home/dxf/WHEELTEC_S300Pro_mini *(rw,sync,no_root_squash)
+具体详细操作可以看nfs_help.txt
+二·编译的问题
+1.开机之后先扩展虚拟内存再编译
+sudo fallocate -l 10G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+为了解决这个问题
+--- stderr: rm_driver                                                                                                                                                                  
+gmake[2]: *** 没有规则可制作目标“/home/dxf/WHEELTEC_S300Pro_mini_ros2_arm_src_2025_9_15/src/ros2_rm_robot-humble/rm_driver/lib/libRM_Service.so”，由“rm_driver” 需求。 停止。
+gmake[2]: *** 正在等待未完成的任务....
+c++: fatal error: 已杀死 signal terminated program cc1plus
+compilation terminated.
+gmake[2]: *** [CMakeFiles/rm_driver.dir/build.make:76：CMakeFiles/rm_driver.dir/src/rm_driver.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/rm_driver.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2
+---
+2.编译命令
+全部编译
+colcon build --packages-skip-build-finished --continue-on-error
+编译单个包
+colcon build --package-select 包名
+3.出现缺少的依赖
+--- stderr: rm_control                                                                                                                                                          
+CMake Error at CMakeLists.txt:26 (find_package):
+  By not providing "Findcontrol_msgs.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "control_msgs", but CMake did not find one.
+
+  Could not find a package configuration file provided by "control_msgs" with
+  any of the following names:
+
+    control_msgsConfig.cmake
+    control_msgs-config.cmake
+
+  Add the installation prefix of "control_msgs" to CMAKE_PREFIX_PATH or set
+  "control_msgs_DIR" to a directory containing one of the above files.  If
+  "control_msgs" provides a separate development package or SDK, be sure it
+  has been installed.
+---
+Failed   <<< rm_control [4.16s, exited with code 1]
+解决方法:
+在工作空间里面find一下
+find . src/control_msgs
+如果出现这个
+find: ‘src/control_msgs’: 没有那个文件或目录
+那么就在使用这个指令
+使用apt安装的
+sudo apt install ros-humble-control-msgs
+sudo apt install libnlopt-dev
+前面的ros-humble是ros版本,后面的是缺少的包
+运行source ./install/setup.bash 设置编译环境
+如果使用这个指令找不到吧可以有两种选择一个是从源码进行编译,一个是安装对应的库
+比如说这个nlopt我们就找不到apt
+这里为了方便我们从安装对应的库
+sudo apt install libnlopt-dev
+3.缺少运行的动态库问题
+--- stderr: rm_driver                                                              
+gmake[2]: *** 没有规则可制作目标“/home/dxf/WHEELTEC_S300Pro_mini_ros2_arm_src_2025_9_15/src/ros2_rm_robot-humble/rm_driver/lib/libRM_Service.so.1”，由“rm_driver” 需求。 停止。
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/rm_driver.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2
+---
+运行
+cd cd ~/WHEELTEC_S300Pro_mini_ros2_arm_src_2025_9_15/src/ros2_rm_robot-humble/rm_driver/lib
+sudo sh lib_install.sh
+cd ~/WHEELTEC_S300Pro_mini_ros2_arm_src_2025_9_15
+source ./install/setup.bash
+colcon build --packages-select rm_driver --cmake-clean-cache
+就解决这个问题啦
+4.解决boost冲突问题
+This may be promoted to an error in a future release of colcon-override-check.
+Starting >>> cv_bridge
+--- stderr: cv_bridge                         
+CMake Error at /usr/local/lib/cmake/Boost-1.75.0/BoostConfig.cmake:141 (find_package):
+  Could not find a package configuration file provided by "boost_python310"
+  (requested version 1.75.0) with any of the following names:
+
+    boost_python310Config.cmake
+    boost_python310-config.cmake
+
+  Add the installation prefix of "boost_python310" to CMAKE_PREFIX_PATH or
+  set "boost_python310_DIR" to a directory containing one of the above files.
+  If "boost_python310" provides a separate development package or SDK, be
+  sure it has been installed.
+Call Stack (most recent call first):
+  /usr/local/lib/cmake/Boost-1.75.0/BoostConfig.cmake:258 (boost_find_component)
+  /usr/share/cmake-3.22/Modules/FindBoost.cmake:594 (find_package)
+  CMakeLists.txt:31 (find_package)
+
+
+---
+Failed   <<< cv_bridge [1.29s, exited with code 1]
+这个代表你装的boost和系统的冲突啦
+解决boost冲突问题
+删除以前的boost
+sudo rm -rf /usr/local/lib/cmake/Boost-1.75.0
+sudo rm -rf /usr/local/include/boost
+sudo rm -f /usr/local/lib/libboost_*
+安装新的boost文件
+sudo apt install --reinstall libboost-all-dev
+source ./install/setup.bash
+colcon build --packages-skip-build-finished --continue-on-error
+5.opencv库安装问题
+--- stderr: grab_demo                                    
+gmake[2]: *** 没有规则可制作目标“/opt/opencv_410/lib/libopencv_aruco.so”，由“charuco_dectet_node” 需求。 停止。
+gmake[2]: *** 正在等待未完成的任务....
+In file included from /home/dxf/WHEELTEC_S300Pro_mini_ros2_arm_src_2025_9_15/src/grab_demo/src/charuco_dectet_node.cpp:1:
+/home/dxf/WHEELTEC_S300Pro_mini_ros2_arm_src_2025_9_15/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:7:10: fatal error: opencv2/aruco/charuco.hpp: 没有那个文件或目录
+    7 | #include <opencv2/aruco/charuco.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/charuco_dectet_node.dir/build.make:76：CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:665：CMakeFiles/charuco_dectet_node.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+/home/dxf/WHEELTEC_S300Pro_mini_ros2_arm_src_2025_9_15/src/grab_demo/src/hand_eye.cpp:7:10: fatal error: opencv2/aruco/charuco.hpp: 没有那个文件或目录
+    7 | #include <opencv2/aruco/charuco.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/hand_eye.dir/build.make:76：CMakeFiles/hand_eye.dir/src/hand_eye.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:691：CMakeFiles/hand_eye.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2
+---
+Failed   <<< grab_demo [49.6s, exited with code 2]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+三·运行缺少依赖
+运行指令 ros2 launch 包名 
+ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r cmd_vel:= 自带的话题名称
+
+

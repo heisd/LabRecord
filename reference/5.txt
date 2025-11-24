@@ -1,0 +1,62 @@
+Connecting...Traceback (most recent call last):
+
+  File "esptool.py", line 37, in <module>
+  File "esptool/__init__.py", line 1173, in _main
+  File "esptool/__init__.py", line 1032, in main
+  File "esptool/cli_util.py", line 229, in __call__
+  File "rich_click/rich_command.py", line 404, in __call__
+  File "click/core.py", line 1442, in __call__
+  File "rich_click/rich_command.py", line 187, in main
+  File "click/core.py", line 1830, in invoke
+  File "click/core.py", line 1226, in invoke
+  File "click/core.py", line 794, in invoke
+  File "click/decorators.py", line 34, in new_func
+  File "esptool/__init__.py", line 687, in write_flash_cli
+  File "esptool/__init__.py", line 469, in prepare_esp_object
+  File "esptool/__init__.py", line 1158, in get_default_connected_device
+  File "esptool/loader.py", line 790, in connect
+  File "esptool/loader.py", line 668, in _connect_attempt
+  File "esptool/reset.py", line 48, in __call__
+  File "esptool/reset.py", line 115, in reset
+  File "esptool/reset.py", line 90, in _setDTRandRTS
+TimeoutError: [Errno 110] Connection timed out
+[PYI-67065:ERROR] Failed to execute script 'esptool' due to unhandled exception!
+上传失败: 上传错误：exit status 1
+micro_ros_arduino 库已声明为预编译：
+在 “/home/dxf/Arduino/libraries/micro_ros_arduino/src/esp32s3” 中找不到预编译库
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/arduino/sketches/D6D5DAEFCCC194158AD5412CC9DEAE1D/sketch/sketch_nov20a.ino.cpp.o:(.literal._Z14timer_callbackP11rcl_timer_sx+0x10): undefined reference to `rcl_publish'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/arduino/sketches/D6D5DAEFCCC194158AD5412CC9DEAE1D/sketch/sketch_nov20a.ino.cpp.o:(.literal._Z5setupv+0x7c): undefined reference to `rmw_uros_set_custom_transport'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/arduino/sketches/D6D5DAEFCCC194158AD5412CC9DEAE1D/sketch/sketch_nov20a.ino.cpp.o:(.literal._Z5setupv+0x80): undefined reference to `rcutils_get_default_allocator'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/arduino/sketches/D6D5DAEFCCC194158AD5412CC9DEAE1D/sketch/sketch_nov20a.ino.cpp.o:(.literal._Z5setupv+0x88): undefined reference to `rclc_support_init'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/arduino/sketches/D6D5DAEFCCC194158AD5412CC9DEAE1D/sketch/sketch_nov20a.ino.cpp.o:(.literal._Z5setupv+0x8c): undefined reference to `rclc_node_init_default'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/arduino/sketches/D6D5DAEFCCC194158AD5412CC9DEAE1D/sketch/sketch_nov20a.ino.cpp.o:(.literal._Z5setupv+0x90): undefined reference to `rosidl_typesupport_c__get_message_type_support_handle__std_msgs__msg__Int32'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/arduino/sketches/D6D5DAEFCCC194158AD5412CC9DEAE1D/sketch/sketch_nov20a.ino.cpp.o:(.literal._Z5setupv+0x94): undefined reference to `rclc_publisher_init_default'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/arduino/sketches/D6D5DAEFCCC194158AD5412CC9DEAE1D/sketch/sketch_nov20a.ino.cpp.o:(.literal._Z5setupv+0x98): undefined reference to `rosidl_typesupport_c__get_message_type_support_handle__std_msgs__msg__String'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/arduino/sketches/D6D5DAEFCCC194158AD5412CC9DEAE1D/sketch/sketch_nov20a.ino.cpp.o:(.literal._Z5setupv+0x9c): undefined reference to `rclc_subscription_init_default'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/arduino/sketches/D6D5DAEFCCC194158AD5412CC9DEAE1D/sketch/sketch_nov20a.ino.cpp.o:(.literal._Z5setupv+0xa0): undefined reference to `std_msgs__msg__Int32__init'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/arduino/sketches/D6D5DAEFCCC194158AD5412CC9DEAE1D/sketch/sketch_nov20a.ino.cpp.o:(.literal._Z5setupv+0xa4): undefined reference to `std_msgs__msg__String__init'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/arduino/sketches/D6D5DAEFCCC194158AD5412CC9DEAE1D/sketch/sketch_nov20a.ino.cpp.o:(.literal._Z5setupv+0xa8): undefined reference to `rclc_executor_init'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/arduino/sketches/D6D5DAEFCCC194158AD5412CC9DEAE1D/sketch/sketch_nov20a.ino.cpp.o:(.literal._Z5setupv+0xac): undefined reference to `rclc_executor_add_subscription'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/arduino/sketches/D6D5DAEFCCC194158AD5412CC9DEAE1D/sketch/sketch_nov20a.ino.cpp.o:(.literal._Z5setupv+0xb0): undefined reference to `rclc_timer_init_default'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/arduino/sketches/D6D5DAEFCCC194158AD5412CC9DEAE1D/sketch/sketch_nov20a.ino.cpp.o:(.literal._Z5setupv+0xb4): undefined reference to `rclc_executor_add_timer'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/arduino/sketches/D6D5DAEFCCC194158AD5412CC9DEAE1D/sketch/sketch_nov20a.ino.cpp.o:(.literal._Z4loopv+0x4): undefined reference to `rclc_executor_spin_some'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/arduino/sketches/D6D5DAEFCCC194158AD5412CC9DEAE1D/sketch/sketch_nov20a.ino.cpp.o: in function `_Z14timer_callbackP11rcl_timer_sx':
+/tmp/.arduinoIDE-unsaved20251020-78096-53f786.vody5/sketch_nov20a/sketch_nov20a.ino:54:(.text._Z14timer_callbackP11rcl_timer_sx+0x18): undefined reference to `rcl_publish'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/arduino/sketches/D6D5DAEFCCC194158AD5412CC9DEAE1D/sketch/sketch_nov20a.ino.cpp.o: in function `_Z5setupv':
+/home/dxf/Arduino/libraries/micro_ros_arduino/src/micro_ros_arduino.h:134:(.text._Z5setupv+0xd6): undefined reference to `rmw_uros_set_custom_transport'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/arduino/sketches/D6D5DAEFCCC194158AD5412CC9DEAE1D/sketch/sketch_nov20a.ino.cpp.o: in function `_Z5setupv':
+/tmp/.arduinoIDE-unsaved20251020-78096-53f786.vody5/sketch_nov20a/sketch_nov20a.ino:87:(.text._Z5setupv+0xeb): undefined reference to `rcutils_get_default_allocator'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/.arduinoIDE-unsaved20251020-78096-53f786.vody5/sketch_nov20a/sketch_nov20a.ino:88:(.text._Z5setupv+0x10b): undefined reference to `rclc_support_init'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/.arduinoIDE-unsaved20251020-78096-53f786.vody5/sketch_nov20a/sketch_nov20a.ino:90:(.text._Z5setupv+0x11e): undefined reference to `rclc_node_init_default'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/.arduinoIDE-unsaved20251020-78096-53f786.vody5/sketch_nov20a/sketch_nov20a.ino:92:(.text._Z5setupv+0x124): undefined reference to `rosidl_typesupport_c__get_message_type_support_handle__std_msgs__msg__Int32'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/.arduinoIDE-unsaved20251020-78096-53f786.vody5/sketch_nov20a/sketch_nov20a.ino:92:(.text._Z5setupv+0x136): undefined reference to `rclc_publisher_init_default'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/.arduinoIDE-unsaved20251020-78096-53f786.vody5/sketch_nov20a/sketch_nov20a.ino:98:(.text._Z5setupv+0x13c): undefined reference to `rosidl_typesupport_c__get_message_type_support_handle__std_msgs__msg__String'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/.arduinoIDE-unsaved20251020-78096-53f786.vody5/sketch_nov20a/sketch_nov20a.ino:98:(.text._Z5setupv+0x14e): undefined reference to `rclc_subscription_init_default'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/.arduinoIDE-unsaved20251020-78096-53f786.vody5/sketch_nov20a/sketch_nov20a.ino:104:(.text._Z5setupv+0x157): undefined reference to `std_msgs__msg__Int32__init'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/.arduinoIDE-unsaved20251020-78096-53f786.vody5/sketch_nov20a/sketch_nov20a.ino:105:(.text._Z5setupv+0x160): undefined reference to `std_msgs__msg__String__init'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/.arduinoIDE-unsaved20251020-78096-53f786.vody5/sketch_nov20a/sketch_nov20a.ino:107:(.text._Z5setupv+0x173): undefined reference to `rclc_executor_init'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/.arduinoIDE-unsaved20251020-78096-53f786.vody5/sketch_nov20a/sketch_nov20a.ino:109:(.text._Z5setupv+0x187): undefined reference to `rclc_executor_add_subscription'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/.arduinoIDE-unsaved20251020-78096-53f786.vody5/sketch_nov20a/sketch_nov20a.ino:116:(.text._Z5setupv+0x19c): undefined reference to `rclc_timer_init_default'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/.arduinoIDE-unsaved20251020-78096-53f786.vody5/sketch_nov20a/sketch_nov20a.ino:121:(.text._Z5setupv+0x1a6): undefined reference to `rclc_executor_add_timer'
+/home/dxf/.arduino15/packages/esp32/tools/esp-x32/2507/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: /tmp/arduino/sketches/D6D5DAEFCCC194158AD5412CC9DEAE1D/sketch/sketch_nov20a.ino.cpp.o: in function `_Z4loopv':
+/tmp/.arduinoIDE-unsaved20251020-78096-53f786.vody5/sketch_nov20a/sketch_nov20a.ino:128:(.text._Z4loopv+0xc): undefined reference to `rclc_executor_spin_some'

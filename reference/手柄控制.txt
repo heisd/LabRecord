@@ -1,0 +1,2 @@
+首先安装这个
+sudo apt install ros-humble-joy-linux

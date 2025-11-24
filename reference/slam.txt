@@ -1,0 +1,38 @@
+运行发现模型找不到
+URDF
+Errors loading geometries:
+• for link 'Link1':
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/Link1.STL'
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/Link1.STL'
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/Link1.STL'
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/Link1.STL'
+• for link 'Link2':
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/Link2.STL'
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/Link2.STL'
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/Link2.STL'
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/Link2.STL'
+• for link 'Link3':
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/Link3.STL'
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/Link3.STL'
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/Link3.STL'
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/Link3.STL'
+• for link 'Link4':
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/Link4.STL'
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/Link4.STL'
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/Link4.STL'
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/Link4.STL'
+• for link 'Link5':
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/Link5.STL'
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/Link5.STL'
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/Link5.STL'
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/Link5.STL'
+• for link 'Link6':
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/Link6.STL'
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/Link6.STL'
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/Link6.STL'
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/Link6.STL'
+• for link 'base_link':
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/s300_pro_base_link.STL'
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/s300_pro_base_link.STL'
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/s300_pro_base_link.STL'
+Could not load mesh resource 'package://rm_description/meshes/rm_eco65_arm/s300_pro_base_link.STL'

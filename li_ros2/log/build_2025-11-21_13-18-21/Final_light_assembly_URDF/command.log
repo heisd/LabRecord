@@ -1,0 +1,2 @@
+Invoking command in '/home/dxf/Desktop/li/li_ros2/build/Final_light_assembly_URDF': /usr/bin/cmake /home/dxf/Desktop/li/li_ros2/src/URDF_FAZE4 -DCMAKE_INSTALL_PREFIX=/home/dxf/Desktop/li/li_ros2/install/Final_light_assembly_URDF
+Invoked command in '/home/dxf/Desktop/li/li_ros2/build/Final_light_assembly_URDF' returned '1': /usr/bin/cmake /home/dxf/Desktop/li/li_ros2/src/URDF_FAZE4 -DCMAKE_INSTALL_PREFIX=/home/dxf/Desktop/li/li_ros2/install/Final_light_assembly_URDF

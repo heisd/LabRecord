@@ -1,0 +1,3 @@
+ros2 launch turn_on_wheeltec_robot wheeltec_camera.launch.py
+功能正常可以正常使用
+使用rviz打开使用

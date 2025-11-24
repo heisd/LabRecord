@@ -1,0 +1,9 @@
+micro_ros_arduino 库已声明为预编译：
+在 /home/dxf/Arduino/libraries/micro_ros_arduino-2.0.8-humble/src/esp32s3 中使用预编译库
+ 项目使用 941971 字节（71%）的程序存储空间。最大值为 1310720 字节。
+ 个全局变量使用 65344 个字节（19%）的动态内存，剩下 262336 个字节用于局部变量。最大值为 327680 字节。
+esptool v5.1.0
+Serial port /dev/ttyACM3:
+Connecting......................................
+A fatal error occurred: Failed to connect to ESP32-S3: Download mode successfully detected, but getting no sync reply: The serial TX path seems to be down.
+For troubleshooting steps visit: https://docs.espressif.com/projects/esptool/en/latest/troubleshooting.html

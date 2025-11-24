@@ -1,0 +1,138 @@
+ros2 launch simple_follower_ros2 visual_follower.launch.py
+ros2 launch wheeltec_robot_kcf wheeltec_robot_kcf.launch.py
+dxf@ubuntu:~/WHEELTEC_S300Pro_mini$ ros2 launch wheeltec_robot_kcf wheeltec_robot_kcf.launch.py
+[INFO] [launch]: All log files can be found below /home/dxf/.ros/log/2025-11-01-13-08-09-893524-ubuntu-28606
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [astra_camera_node-1]: process started with pid [28608]
+[INFO] [wheeltec_robot_node-2]: process started with pid [28610]
+[INFO] [ekf_node-3]: process started with pid [28612]
+[INFO] [static_transform_publisher-4]: process started with pid [28614]
+[INFO] [static_transform_publisher-5]: process started with pid [28616]
+[INFO] [static_transform_publisher-6]: process started with pid [28618]
+[INFO] [static_transform_publisher-7]: process started with pid [28620]
+[INFO] [static_transform_publisher-8]: process started with pid [28650]
+[INFO] [static_transform_publisher-9]: process started with pid [28667]
+[INFO] [static_transform_publisher-10]: process started with pid [28678]
+[INFO] [static_transform_publisher-11]: process started with pid [28690]
+[INFO] [static_transform_publisher-12]: process started with pid [28693]
+[INFO] [static_transform_publisher-13]: process started with pid [28703]
+[INFO] [static_transform_publisher-14]: process started with pid [28707]
+[INFO] [robot_state_publisher-15]: process started with pid [28709]
+[INFO] [joint_state_publisher-16]: process started with pid [28713]
+[INFO] [static_transform_publisher-17]: process started with pid [28721]
+[INFO] [imu_filter_madgwick_node-18]: process started with pid [28743]
+[INFO] [run_tracker_node-19]: process started with pid [28752]
+[ERROR] [run_tracker_node-19]: process has died [pid 28752, exit code 127, cmd '/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_kcf/lib/wheeltec_robot_kcf/run_tracker_node --ros-args --params-file /tmp/launch_params_jt7nyxf8'].
+[wheeltec_robot_node-2] [INFO] [1761973691.057798531] [wheeltec_robot]: wheeltec_robot serial port opened
+[static_transform_publisher-4] [WARN] [1761973690.961928459] []: Old-style arguments are deprecated; see --help for new-style arguments
+[static_transform_publisher-4] [INFO] [1761973691.015537202] [base_to_link]: Spinning until stopped - publishing transform
+[static_transform_publisher-4] translation: ('0.173574', '0.000000', '0.208300')
+[static_transform_publisher-4] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-4] from 'base_footprint' to 'base_link'
+[static_transform_publisher-5] [INFO] [1761973691.015686164] [base_to_laser]: Spinning until stopped - publishing transform
+[static_transform_publisher-5] translation: ('0.000000', '0.000000', '0.190000')
+[static_transform_publisher-5] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-5] from 'base_footprint' to 'laser'
+[static_transform_publisher-6] [INFO] [1761973691.015535570] [base_to_laser1]: Spinning until stopped - publishing transform
+[static_transform_publisher-6] translation: ('0.300000', '0.235000', '0.190000')
+[static_transform_publisher-6] rotation: ('0.000000', '0.000000', '0.382499', '0.923956')
+[static_transform_publisher-6] from 'base_footprint' to 'laser1'
+[static_transform_publisher-7] [INFO] [1761973691.150146445] [base_to_laser2]: Spinning until stopped - publishing transform
+[static_transform_publisher-7] translation: ('-0.300000', '-0.235000', '0.190000')
+[static_transform_publisher-7] rotation: ('0.000000', '0.000000', '-0.923651', '0.383235')
+[static_transform_publisher-7] from 'base_footprint' to 'laser2'
+[static_transform_publisher-8] [INFO] [1761973691.136076466] [base_to_ultrasonic_A]: Spinning until stopped - publishing transform
+[static_transform_publisher-8] translation: ('0.340000', '0.275000', '0.090000')
+[static_transform_publisher-8] rotation: ('0.000000', '0.000000', '0.346184', '0.938167')
+[static_transform_publisher-8] from 'base_footprint' to 'ultrasonic_A'
+[static_transform_publisher-9] [INFO] [1761973691.107398069] [base_to_ultrasonic_B]: Spinning until stopped - publishing transform
+[static_transform_publisher-9] translation: ('0.340000', '0.170000', '0.090000')
+[static_transform_publisher-9] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-9] from 'base_footprint' to 'ultrasonic_B'
+[static_transform_publisher-13] [INFO] [1761973691.235296087] [base_to_ultrasonic_F]: Spinning until stopped - publishing transform
+[static_transform_publisher-13] translation: ('0.340000', '-0.275000', '0.090000')
+[static_transform_publisher-13] rotation: ('0.000000', '0.000000', '-0.346184', '0.938167')
+[static_transform_publisher-13] from 'base_footprint' to 'ultrasonic_F'
+[run_tracker_node-19] /home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_kcf/lib/wheeltec_robot_kcf/run_tracker_node: error while loading shared libraries: libopencv_highgui.so.413: cannot open shared object file: No such file or directory
+[static_transform_publisher-17] [WARN] [1761973691.269809728] []: Old-style arguments are deprecated; see --help for new-style arguments
+[robot_state_publisher-15] [WARN] [1761973691.353947709] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[robot_state_publisher-15] [INFO] [1761973691.354177312] [robot_state_publisher]: got segment Link1
+[robot_state_publisher-15] [INFO] [1761973691.357410187] [robot_state_publisher]: got segment Link2
+[robot_state_publisher-15] [INFO] [1761973691.360983258] [robot_state_publisher]: got segment Link3
+[robot_state_publisher-15] [INFO] [1761973691.361031259] [robot_state_publisher]: got segment Link4
+[robot_state_publisher-15] [INFO] [1761973691.361046075] [robot_state_publisher]: got segment Link5
+[robot_state_publisher-15] [INFO] [1761973691.361055707] [robot_state_publisher]: got segment Link6
+[robot_state_publisher-15] [INFO] [1761973691.361064763] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-15] [INFO] [1761973691.361073051] [robot_state_publisher]: got segment grasp_point
+[robot_state_publisher-15] [INFO] [1761973691.361081308] [robot_state_publisher]: got segment gripper
+[static_transform_publisher-11] [INFO] [1761973691.380471069] [base_to_ultrasonic_D]: Spinning until stopped - publishing transform
+[static_transform_publisher-11] translation: ('0.340000', '-0.060000', '0.090000')
+[static_transform_publisher-11] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-11] from 'base_footprint' to 'ultrasonic_D'
+[static_transform_publisher-12] [INFO] [1761973691.494437765] [base_to_ultrasonic_E]: Spinning until stopped - publishing transform
+[static_transform_publisher-12] translation: ('0.340000', '-0.170000', '0.090000')
+[static_transform_publisher-12] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-12] from 'base_footprint' to 'ultrasonic_E'
+[static_transform_publisher-10] [INFO] [1761973691.531910102] [base_to_ultrasonic_C]: Spinning until stopped - publishing transform
+[static_transform_publisher-10] translation: ('0.340000', '0.055000', '0.090000')
+[static_transform_publisher-10] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-10] from 'base_footprint' to 'ultrasonic_C'
+[static_transform_publisher-17] [INFO] [1761973691.621982049] [car_camera_link]: Spinning until stopped - publishing transform
+[static_transform_publisher-17] translation: ('0.270000', '0.000000', '0.230000')
+[static_transform_publisher-17] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-17] from 'base_footprint' to 'camera_link'
+[imu_filter_madgwick_node-18] [INFO] [1761973691.651509097] [imu_filter_madgwick]: Starting ImuFilter
+[imu_filter_madgwick_node-18] [INFO] [1761973691.652465110] [imu_filter_madgwick]: Using dt computed from message headers
+[imu_filter_madgwick_node-18] [INFO] [1761973691.652506423] [imu_filter_madgwick]: The gravity vector is kept in the IMU message.
+[imu_filter_madgwick_node-18] [INFO] [1761973691.652847995] [imu_filter_madgwick]: Imu filter gain set to 0.100000
+[imu_filter_madgwick_node-18] [INFO] [1761973691.652883132] [imu_filter_madgwick]: Gyro drift bias set to 0.000000
+[imu_filter_madgwick_node-18] [INFO] [1761973691.652897916] [imu_filter_madgwick]: Magnetometer bias values: 0.000000 0.000000 0.000000
+[static_transform_publisher-14] [INFO] [1761973691.688776312] [base_to_gyro]: Spinning until stopped - publishing transform
+[static_transform_publisher-14] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-14] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-14] from 'base_footprint' to 'gyro_link'
+[imu_filter_madgwick_node-18] [INFO] [1761973691.721173670] [imu_filter_madgwick]: First IMU message received.
+[astra_camera_node-1] Warning: class_loader.impl: SEVERE WARNING!!! A namespace collision has occurred with plugin factory for class rclcpp_components::NodeFactoryTemplate<astra_camera::OBCameraNodeFactory>. New factory will OVERWRITE existing one. This situation occurs when libraries containing plugins are directly linked against an executable (the one running right now generating this message). Please separate plugins out into their own library or just don't link against the library and use either class_loader::ClassLoader/MultiLibraryClassLoader to open.
+[astra_camera_node-1]          at line 253 in /opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp
+[astra_camera_node-1] [INFO] [1761973691.835871384] [camera.camera]: init done.
+[astra_camera_node-1] [INFO] [1761973691.837396108] [camera.camera]: Waiting for device connection...
+[astra_camera_node-1] [INFO] [1761973691.837537646] [device_listener]: Found 1 devices
+[astra_camera_node-1] [INFO] [1761973691.837594767] [camera.camera]: Trying to open device: 2bc5/0614@1/12
+[joint_state_publisher-16] [INFO] [1761973692.837423617] [joint_state_publisher]: Waiting for robot_description to be published on the robot_description topic...
+[astra_camera_node-1] [INFO] [1761973693.150447323] [camera.camera]: Device connected: Astra serial number: AY2783300ND
+[astra_camera_node-1] [INFO] [1761973693.150627197] [camera.camera]: starting device AY2783300ND
+[astra_camera_node-1] [INFO] [1761973693.596189942] [camera.camera]: color is not enable
+[astra_camera_node-1] [INFO] [1761973693.632668026] [camera.camera]: set depth video mode Resolution :640x400@30Hz
+[astra_camera_node-1] format PIXEL_FORMAT_DEPTH_1_MM
+[astra_camera_node-1] [INFO] [1761973693.634088780] [camera.camera]: set ir video mode Resolution :640x400@30Hz
+[astra_camera_node-1] format 
+[astra_camera_node-1] [INFO] [1761973694.008548629] [camera.camera]: open uvc camera
+[astra_camera_node-1] [INFO] [1761973694.106290566] [camera.camera]: uvc config: vendor_id: 2bc5
+[astra_camera_node-1] product_id: 511
+[astra_camera_node-1] width: 640
+[astra_camera_node-1] height: 480
+[astra_camera_node-1] fps: 30
+[astra_camera_node-1] serial_number: AY2783300ND
+[astra_camera_node-1] format: mjpeg
+[astra_camera_node-1] frame_id: camera_color_frame
+[astra_camera_node-1] optical_frame_id : camera_color_optical_frame
+[astra_camera_node-1] 
+[astra_camera_node-1] unsupported descriptor subtype VS_COLORFORMAT
+[astra_camera_node-1] [INFO] [1761973694.129643740] [camera.camera]: open camera success
+[astra_camera_node-1] [INFO] [1761973694.144482657] [camera.camera]: set depth video mode Resolution :640x400@30Hz
+[astra_camera_node-1] format PIXEL_FORMAT_DEPTH_1_MM
+[astra_camera_node-1] [WARN] [1761973694.144738916] [camera.camera]: Publishing dynamic camera transforms (/tf) at 10 Hz
+[astra_camera_node-1] [INFO] [1761973694.145760690] [camera.camera]: set ir video mode Resolution :640x400@30Hz
+[astra_camera_node-1] format 
+[astra_camera_node-1] Warning: USB events thread - failed to set priority. This might cause loss of data...
+[astra_camera_node-1] ReadBinaryFile, 63
+[astra_camera_node-1] [width height fx fy cx cy baseline]640 400 945.028 945.028 640 400 40 
+[astra_camera_node-1] [INFO] [1761973694.215891701] [camera.camera]: depth is started
+[astra_camera_node-1] [INFO] [1761973694.229601578] [camera.camera]: ir is started
+[astra_camera_node-1] [INFO] [1761973694.229740172] [camera.camera]: Start UVC camera
+[astra_camera_node-1] [INFO] [1761973694.236063488] [camera.camera]: set uvc mode 640x480@30 format UVC_FRAME_FORMAT_MJPEG
+[astra_camera_node-1] attempt to claim already-claimed interface 1
+[astra_camera_node-1] [INFO] [1761973694.700876248] [camera.camera]: device AY2783300ND started.
+
+
+

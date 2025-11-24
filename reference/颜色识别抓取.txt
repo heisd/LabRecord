@@ -1,0 +1,13 @@
+测试机械臂是否正常工作
+ros2 launch lebai_lm3_moveit_config lm3.launch.py robot_ip:=192.168.0.50
+单独启动相机测试
+ros2 launch astra_camera gemini.launch.py
+测试颜色识别
+ros2 run grab_demo hsv_range
+dxf@ubuntu:~/wheeltec_lebai_humble_2024_7_17$ ros2 run grab_demo hsv_range
+[ WARN:0@0.332] global window.cpp:703 createTrackbar UI/Trackbar(Hue Min@RGB Image): Using 'value' pointer is unsafe and deprecated. Use NULL as value pointer. To fetch trackbar value setup callback.
+[ WARN:0@0.334] global window.cpp:703 createTrackbar UI/Trackbar(Hue Max@RGB Image): Using 'value' pointer is unsafe and deprecated. Use NULL as value pointer. To fetch trackbar value setup callback.
+[ WARN:0@0.335] global window.cpp:703 createTrackbar UI/Trackbar(Saturation Min@RGB Image): Using 'value' pointer is unsafe and deprecated. Use NULL as value pointer. To fetch trackbar value setup callback.
+[ WARN:0@0.336] global window.cpp:703 createTrackbar UI/Trackbar(Saturation Max@RGB Image): Using 'value' pointer is unsafe and deprecated. Use NULL as value pointer. To fetch trackbar value setup callback.
+[ WARN:0@0.336] global window.cpp:703 createTrackbar UI/Trackbar(Value Min@RGB Image): Using 'value' pointer is unsafe and deprecated. Use NULL as value pointer. To fetch trackbar value setup callback.
+[ WARN:0@0.337] global window.cpp:703 createTrackbar UI/Trackbar(Value Max@RGB Image): Using 'value' pointer is unsafe and deprecated. Use NULL as value pointer. To fetch trackbar value setup callback.

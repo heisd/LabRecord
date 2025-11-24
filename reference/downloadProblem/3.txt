@@ -1,0 +1,43 @@
+在 /home/dxf/Arduino/libraries/micro_ros_arduino-2.0.8-humble/src/esp32s3 中使用预编译库
+ 项目使用 920199 字节（70%）的程序存储空间。最大值为 1310720 字节。
+ 个全局变量使用 64824 个字节（19%）的动态内存，剩下 262856 个字节用于局部变量。最大值为 327680 字节。
+esptool v5.1.0
+Serial port /dev/ttyACM2:
+Connecting.............................Traceback (most recent call last):
+  File "esptool/loader.py", line 1143, in get_security_info
+  File "esptool/loader.py", line 565, in check_command
+  File "esptool/loader.py", line 495, in command
+  File "esptool/loader.py", line 431, in read
+  File "esptool/loader.py", line 1923, in slip_reader
+esptool.util.FatalError: Invalid head of packet (0x00): Possible serial noise or corruption.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "esptool/__init__.py", line 1173, in _main
+  File "esptool/__init__.py", line 1032, in main
+  File "esptool/cli_util.py", line 229, in __call__
+  File "rich_click/rich_command.py", line 404, in __call__
+  File "click/core.py", line 1442, in __call__
+  File "rich_click/rich_command.py", line 187, in main
+  File "click/core.py", line 1830, in invoke
+  File "click/core.py", line 1226, in invoke
+  File "click/core.py", line 794, in invoke
+  File "click/decorators.py", line 34, in new_func
+  File "esptool/__init__.py", line 687, in write_flash_cli
+  File "esptool/__init__.py", line 469, in prepare_esp_object
+  File "esptool/__init__.py", line 1158, in get_default_connected_device
+  File "esptool/loader.py", line 821, in connect
+  File "esptool/loader.py", line 1174, in get_chip_id
+  File "esptool/loader.py", line 1152, in get_security_info
+  File "esptool/loader.py", line 565, in check_command
+  File "esptool/loader.py", line 495, in command
+  File "esptool/loader.py", line 431, in read
+StopIteration
+
+A fatal error occurred: The chip stopped responding.
+
+上传失败: 上传错误：exit status 2
+A serial exception error occurred: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+Note: This error originates from pySerial. It is likely not a problem with esptool, but with the hardware connection or drivers.
+For troubleshooting steps visit: https://docs.espressif.com/projects/esptool/en/latest/troubleshooting.html

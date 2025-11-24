@@ -1,0 +1,6 @@
+首先在确保底盘已经通过的情况下
+下一步是通过底盘和相机建图
+1.运行ros2 launch turn_on_wheeltec_robot wheeltec_sensors.launch.py
+这里会驱动相机和底盘和雷达
+2.运行ros2 run wheeltec_robot_keyboard wheeltec_keyboard 
+这里会驱动键盘控制

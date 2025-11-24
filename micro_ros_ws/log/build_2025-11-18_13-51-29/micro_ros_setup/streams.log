@@ -1,0 +1,210 @@
+[0.021s] Invoking command in '/home/dxf/Desktop/micro_ros_ws/build/micro_ros_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/dxf/Desktop/micro_ros_ws/src/micro_ros_setup -DCMAKE_INSTALL_PREFIX=/home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup
+[0.255s] -- The C compiler identification is GNU 11.4.0
+[0.442s] -- The CXX compiler identification is GNU 11.4.0
+[0.465s] -- Detecting C compiler ABI info
+[0.645s] -- Detecting C compiler ABI info - done
+[0.670s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.671s] -- Detecting C compile features
+[0.674s] -- Detecting C compile features - done
+[0.689s] -- Detecting CXX compiler ABI info
+[0.865s] -- Detecting CXX compiler ABI info - done
+[0.888s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.888s] -- Detecting CXX compile features
+[0.890s] -- Detecting CXX compile features - done
+[0.907s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.245s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.499s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.716s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.767s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.773s] -- Added test 'lint_cmake' to check CMake code style
+[1.776s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.797s] -- Added test 'xmllint' to check XML markup files
+[1.800s] -- Configuring done
+[1.808s] -- Generating done
+[1.811s] -- Build files have been written to: /home/dxf/Desktop/micro_ros_ws/build/micro_ros_setup
+[1.823s] Invoked command in '/home/dxf/Desktop/micro_ros_ws/build/micro_ros_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/dxf/Desktop/micro_ros_ws/src/micro_ros_setup -DCMAKE_INSTALL_PREFIX=/home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup
+[1.828s] Invoking command in '/home/dxf/Desktop/micro_ros_ws/build/micro_ros_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dxf/Desktop/micro_ros_ws/build/micro_ros_setup -- -j6 -l6
+[1.914s] Invoked command in '/home/dxf/Desktop/micro_ros_ws/build/micro_ros_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dxf/Desktop/micro_ros_ws/build/micro_ros_setup -- -j6 -l6
+[1.941s] Invoking command in '/home/dxf/Desktop/micro_ros_ws/build/micro_ros_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dxf/Desktop/micro_ros_ws/build/micro_ros_setup
+[1.962s] -- Install configuration: ""
+[1.963s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/share/ament_index/resource_index/package_run_dependencies/micro_ros_setup
+[1.963s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/share/ament_index/resource_index/parent_prefix_path/micro_ros_setup
+[1.969s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/share/micro_ros_setup/environment/ament_prefix_path.sh
+[1.970s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/share/micro_ros_setup/environment/ament_prefix_path.dsv
+[1.970s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/share/micro_ros_setup/environment/path.sh
+[1.970s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/share/micro_ros_setup/environment/path.dsv
+[1.970s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/share/micro_ros_setup/local_setup.bash
+[1.970s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/share/micro_ros_setup/local_setup.sh
+[1.970s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/share/micro_ros_setup/local_setup.zsh
+[1.971s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/share/micro_ros_setup/local_setup.dsv
+[1.971s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/share/micro_ros_setup/package.dsv
+[1.971s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/share/ament_index/resource_index/packages/micro_ros_setup
+[1.971s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/share/micro_ros_setup/cmake/micro_ros_setupConfig.cmake
+[1.971s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/share/micro_ros_setup/cmake/micro_ros_setupConfig-version.cmake
+[1.971s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/share/micro_ros_setup/package.xml
+[1.972s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config
+[1.972s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/zephyr
+[1.972s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/zephyr/dev_ros2_packages.txt
+[1.972s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/zephyr/list_apps.sh
+[1.972s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/zephyr/generic
+[1.972s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/zephyr/generic/configure.sh
+[1.973s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/zephyr/generic/flash.sh
+[1.973s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/zephyr/generic/build.sh
+[1.973s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/zephyr/generic/client_uros_packages.repos
+[1.973s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/zephyr/generic/supported_platforms
+[1.973s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/zephyr/generic/create.sh
+[1.973s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/zephyr/generic/client-colcon.meta
+[1.973s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/zephyr/generic/board.repos
+[1.974s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/zephyr/generic/package.xml
+[1.974s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/zephyr/dev_uros_packages.repos
+[1.979s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/host
+[1.979s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/host/dev_ros2_packages.txt
+[1.979s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/host/generic
+[1.979s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/host/generic/flash.sh
+[1.980s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/host/generic/client_host_packages.repos
+[1.980s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/host/generic/build.sh
+[1.980s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/host/generic/create.sh
+[1.980s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/host/generic/client-host-colcon.meta
+[1.980s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/host/generic/package.xml
+[1.980s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/host/dev_uros_packages.repos
+[1.980s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/host/client_ros2_packages.txt
+[1.981s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/raspbian
+[1.981s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/raspbian/dev_ros2_packages.txt
+[1.981s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/raspbian/generic
+[1.981s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/raspbian/generic/configure.sh
+[1.981s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/raspbian/generic/flash.sh
+[1.982s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/raspbian/generic/build.sh
+[1.982s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/raspbian/generic/client_uros_packages.repos
+[1.982s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/raspbian/generic/supported_platforms
+[1.983s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/raspbian/generic/create.sh
+[1.983s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/raspbian/generic/client-colcon.meta
+[1.983s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/raspbian/dev_uros_packages.repos
+[1.983s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/generate_lib
+[1.984s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/generate_lib/dev_ros2_packages.txt
+[1.984s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/generate_lib/generic
+[1.984s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/generate_lib/generic/flash.sh
+[1.984s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/generate_lib/generic/build.sh
+[1.984s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/generate_lib/generic/client_uros_packages.repos
+[1.985s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/generate_lib/generic/demo_toolchain.cmake
+[1.985s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/generate_lib/generic/create.sh
+[1.985s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/generate_lib/generic/client-colcon.meta
+[1.985s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/generate_lib/generic/package.xml
+[1.985s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/generate_lib/dev_uros_packages.repos
+[1.986s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/agent_uros_packages.repos
+[1.986s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos
+[1.986s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/dev_ros2_packages.txt
+[1.986s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/esp32
+[1.986s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/esp32/configure.sh
+[1.987s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/esp32/flash.sh
+[1.987s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/esp32/build.sh
+[1.987s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/esp32/client_uros_packages.repos
+[1.987s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/esp32/create.sh
+[1.987s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/esp32/client-colcon.meta
+[1.987s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/esp32/README.md
+[1.988s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/esp32/board.repos
+[1.988s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/esp32/package.xml
+[1.988s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407
+[1.988s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/configure.sh
+[1.988s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/flash.sh
+[1.989s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/build.sh
+[1.989s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/client_uros_packages.repos
+[1.989s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/create.sh
+[1.989s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/client-colcon.meta
+[1.989s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/board.repos
+[1.990s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/package.xml
+[1.990s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze
+[1.990s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/configure.sh
+[1.990s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/flash.sh
+[1.991s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/build.sh
+[1.991s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/client_uros_packages.repos
+[1.991s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/create.sh
+[1.991s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/client-colcon.meta
+[1.991s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/board.repos
+[1.991s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/package.xml
+[1.992s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/list_apps.sh
+[1.992s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg
+[1.992s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/configure.sh
+[1.992s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/flash.sh
+[1.992s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/build.sh
+[1.992s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/client_uros_packages.repos
+[1.993s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/create.sh
+[1.993s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/client-colcon.meta
+[1.993s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/board.repos
+[1.993s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/package.xml
+[1.994s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi
+[1.994s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/configure.sh
+[1.994s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/flash.sh
+[1.994s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/build.sh
+[1.995s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/client_uros_packages.repos
+[1.995s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/create.sh
+[1.995s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/client-colcon.meta
+[1.995s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/board.repos
+[1.996s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/package.xml
+[1.996s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re
+[1.996s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/configure.sh
+[1.996s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/flash.sh
+[1.997s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/build.sh
+[1.997s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/client_uros_packages.repos
+[1.997s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/create.sh
+[1.997s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/client-colcon.meta
+[1.998s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/board.repos
+[1.998s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/package.xml
+[1.998s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/crazyflie21
+[1.998s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/crazyflie21/configure.sh
+[1.998s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/crazyflie21/flash.sh
+[1.999s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/crazyflie21/build.sh
+[1.999s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/crazyflie21/client_uros_packages.repos
+[1.999s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/crazyflie21/create.sh
+[1.999s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/crazyflie21/client-colcon.meta
+[2.000s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/crazyflie21/board.repos
+[2.000s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/crazyflie21/package.xml
+[2.000s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/freertos/dev_uros_packages.repos
+[2.001s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/client_uros_packages.repos
+[2.001s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/renesas_ra
+[2.001s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/renesas_ra/dev_ros2_packages.txt
+[2.001s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/renesas_ra/list_apps.sh
+[2.002s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5
+[2.002s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/configure.sh
+[2.002s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/flash.sh
+[2.002s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/build.sh
+[2.003s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/client_uros_packages.repos
+[2.003s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/create.sh
+[2.003s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/client-colcon.meta
+[2.003s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/board.repos
+[2.004s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/renesas_ra/dev_uros_packages.repos
+[2.004s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/utils.sh
+[2.004s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/mbed
+[2.005s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/mbed/dev_ros2_packages.txt
+[2.005s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/mbed/list_apps.sh
+[2.005s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/mbed/generic
+[2.005s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/mbed/generic/flash.sh
+[2.006s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/mbed/generic/build.sh
+[2.006s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/mbed/generic/client_uros_packages.repos
+[2.006s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/mbed/generic/supported_platforms
+[2.007s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/mbed/generic/create.sh
+[2.007s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/mbed/generic/board.repos
+[2.007s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/mbed/generic/package.xml
+[2.008s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/mbed/dev_uros_packages.repos
+[2.008s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/client_ros2_packages.txt
+[2.009s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/agent_ros2_packages.txt
+[2.009s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/android
+[2.009s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/android/dev_ros2_packages.txt
+[2.010s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/android/generic
+[2.010s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/android/generic/flash.sh
+[2.010s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/android/generic/build.sh
+[2.011s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/android/generic/client_uros_packages.repos
+[2.011s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/android/generic/create.sh
+[2.011s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/android/generic/client-colcon.meta
+[2.012s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/android/generic/package.xml
+[2.012s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/./config/android/dev_uros_packages.repos
+[2.013s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/lib/micro_ros_setup/create_ws.sh
+[2.013s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/lib/micro_ros_setup/create_agent_ws.sh
+[2.013s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/lib/micro_ros_setup/create_firmware_ws.sh
+[2.014s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/lib/micro_ros_setup/configure_firmware.sh
+[2.014s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/lib/micro_ros_setup/flash_firmware.sh
+[2.014s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/lib/micro_ros_setup/build_firmware.sh
+[2.015s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/lib/micro_ros_setup/build_agent.sh
+[2.015s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/lib/micro_ros_setup/yaml_filter.py
+[2.015s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/lib/micro_ros_setup/clean_env.sh
+[2.016s] -- Installing: /home/dxf/Desktop/micro_ros_ws/install/micro_ros_setup/lib/micro_ros_setup/component
+[2.022s] Invoked command in '/home/dxf/Desktop/micro_ros_ws/build/micro_ros_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dxf/Desktop/micro_ros_ws/build/micro_ros_setup
