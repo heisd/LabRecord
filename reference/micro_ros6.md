@@ -46,6 +46,22 @@ ros2 topic pub /servo_angles std_msgs/msg/Float32MultiArray \
   "{data: [90,45,135,60,120,90]}" \
   --qos-reliability best_effort
 ```
+# 原因出现在信息没有分配内存上
+初始化信息的时候要使用静态缓冲区
+```cpp
+static float data_buffer[6];  // 静态缓冲区
+msg.data.data = data_buffer;
+msg.data.size = 0;
+msg.data.capacity = 6;
+
+```
+修改之后发现就可以正常运行了
+还是因为我们的信息类型初始化未给分配内存，导致了信息不能被实体化来创建
+最后的代码存在了[OK](./micro_ros6/Arduino/ESP32OK.ino)
+直接使用这个代码+我们的串口调试就可以了
+并且在这个代码中我还加入了死区，为了防止过小的信号干扰，从而是舵机不那么稳定
+
+
 
 
 
