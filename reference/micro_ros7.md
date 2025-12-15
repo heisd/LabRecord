@@ -76,6 +76,17 @@ sudo apt install ros-humble-moveit-setup-assistant
 ```
 再运行
 下面可以参考这个的配置<https://github.com/heisd/RosReference/blob/liquanyan/moveit1.md>
+并将文件存放在moveit_ws/src/micro_urdf下面
+编译
+```bash
+colcon build --symlink-install
+```
+运行我们生成的launch文件
+```bash
+ros2 launch mirco_urdf demo.launch.py
+```
+
+
 
 
 

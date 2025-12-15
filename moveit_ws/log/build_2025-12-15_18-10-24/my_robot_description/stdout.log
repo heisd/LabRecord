@@ -1,0 +1,37 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/dxf/Desktop/li/moveit_ws/build/my_robot_description
+-- Install configuration: ""
+-- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/launch
+-- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/launch/display.launch
+-- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/launch/gazebo.launch
+-- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/meshes
+-- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/meshes/Link_4.STL
+-- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/meshes/link_3.STL
+-- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/meshes/link_1.STL
+-- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/meshes/link_2.STL
+-- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/meshes/grab.STL
+-- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/meshes/base_link.STL
+-- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/urdf
+-- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/urdf/my_robot_description.urdf
+-- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/urdf/my_robot_description.csv
+-- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/textures
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/config
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/config/joint_names_robotic arm mine.STEP.SLDASM.yaml
+-- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/ament_index/resource_index/package_run_dependencies/my_robot_description
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/ament_index/resource_index/parent_prefix_path/my_robot_description
+-- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.sh
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/environment/path.sh
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/environment/path.dsv
+-- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/local_setup.bash
+-- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/local_setup.sh
+-- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/local_setup.zsh
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/local_setup.dsv
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/package.dsv
+-- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/ament_index/resource_index/packages/my_robot_description
+-- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig.cmake
+-- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig-version.cmake
+-- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/package.xml

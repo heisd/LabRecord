@@ -1,0 +1,38 @@
+[0.020s] Invoking command in '/home/dxf/Desktop/li/moveit_ws/build/micro_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}/opt/ros/humble /usr/bin/cmake --build /home/dxf/Desktop/li/moveit_ws/build/micro_urdf -- -j6 -l6
+[0.102s] Invoked command in '/home/dxf/Desktop/li/moveit_ws/build/micro_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}/opt/ros/humble /usr/bin/cmake --build /home/dxf/Desktop/li/moveit_ws/build/micro_urdf -- -j6 -l6
+[0.106s] Invoking command in '/home/dxf/Desktop/li/moveit_ws/build/micro_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}/opt/ros/humble /usr/bin/cmake --install /home/dxf/Desktop/li/moveit_ws/build/micro_urdf
+[0.125s] -- Install configuration: ""
+[0.125s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/ament_index/resource_index/package_run_dependencies/micro_urdf
+[0.125s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/ament_index/resource_index/parent_prefix_path/micro_urdf
+[0.125s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/environment/ament_prefix_path.sh
+[0.126s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/environment/ament_prefix_path.dsv
+[0.126s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/environment/path.sh
+[0.126s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/environment/path.dsv
+[0.126s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/local_setup.bash
+[0.127s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/local_setup.sh
+[0.127s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/local_setup.zsh
+[0.127s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/local_setup.dsv
+[0.127s] -- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/package.dsv
+[0.127s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/ament_index/resource_index/packages/micro_urdf
+[0.128s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/cmake/micro_urdfConfig.cmake
+[0.128s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/cmake/micro_urdfConfig-version.cmake
+[0.128s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/package.xml
+[0.128s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/launch
+[0.128s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/launch/setup_assistant.launch.py
+[0.129s] -- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/launch/demo.launch.py
+[0.129s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/launch/static_virtual_joint_tfs.launch.py
+[0.129s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/launch/rsp.launch.py
+[0.129s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/launch/moveit_rviz.launch.py
+[0.129s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/launch/spawn_controllers.launch.py
+[0.129s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/launch/move_group.launch.py
+[0.129s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/launch/warehouse_db.launch.py
+[0.130s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/config
+[0.130s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/config/ros2_controllers.yaml
+[0.130s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/config/moveit.rviz
+[0.130s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/config/joint_limits.yaml
+[0.131s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/config/my_robot_description.srdf
+[0.131s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/config/kinematics.yaml
+[0.132s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/config/moveit_controllers.yaml
+[0.132s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/config/pilz_cartesian_limits.yaml
+[0.134s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/.setup_assistant
+[0.135s] Invoked command in '/home/dxf/Desktop/li/moveit_ws/build/micro_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}/opt/ros/humble /usr/bin/cmake --install /home/dxf/Desktop/li/moveit_ws/build/micro_urdf

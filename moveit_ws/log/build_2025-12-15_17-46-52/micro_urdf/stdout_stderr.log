@@ -1,0 +1,38 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/dxf/Desktop/li/moveit_ws/build/micro_urdf
+-- Install configuration: ""
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/ament_index/resource_index/package_run_dependencies/micro_urdf
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/ament_index/resource_index/parent_prefix_path/micro_urdf
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/environment/ament_prefix_path.sh
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/environment/ament_prefix_path.dsv
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/environment/path.sh
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/environment/path.dsv
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/local_setup.bash
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/local_setup.sh
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/local_setup.zsh
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/local_setup.dsv
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/package.dsv
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/ament_index/resource_index/packages/micro_urdf
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/cmake/micro_urdfConfig.cmake
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/cmake/micro_urdfConfig-version.cmake
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/package.xml
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/launch
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/launch/setup_assistant.launch.py
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/launch/demo.launch.py
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/launch/static_virtual_joint_tfs.launch.py
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/launch/rsp.launch.py
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/launch/moveit_rviz.launch.py
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/launch/spawn_controllers.launch.py
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/launch/move_group.launch.py
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/launch/warehouse_db.launch.py
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/config
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/config/ros2_controllers.yaml
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/config/moveit.rviz
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/config/joint_limits.yaml
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/config/my_robot_description.srdf
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/config/kinematics.yaml
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/config/moveit_controllers.yaml
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/config/pilz_cartesian_limits.yaml
+-- Installing: /home/dxf/Desktop/li/moveit_ws/install/micro_urdf/share/micro_urdf/.setup_assistant

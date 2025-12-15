@@ -1,0 +1,21 @@
+# MoveIt uses this configuration for controller management
+
+moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
+
+moveit_simple_controller_manager:
+  controller_names:
+    - micro_ros_controller
+    - hand
+
+  micro_ros_controller:
+    type: FollowJointTrajectory
+    joints:
+      []
+    action_ns: follow_joint_trajectory
+    default: true
+  hand:
+    type: GripperCommand
+    joints:
+      []
+    action_ns: gripper_cmd
+    default: true

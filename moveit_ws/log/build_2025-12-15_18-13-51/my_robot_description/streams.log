@@ -1,0 +1,36 @@
+[0.023s] Invoking command in '/home/dxf/Desktop/li/moveit_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dxf/Desktop/li/moveit_ws/build/my_robot_description -- -j6 -l6
+[0.108s] Invoked command in '/home/dxf/Desktop/li/moveit_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dxf/Desktop/li/moveit_ws/build/my_robot_description -- -j6 -l6
+[0.131s] Invoking command in '/home/dxf/Desktop/li/moveit_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dxf/Desktop/li/moveit_ws/build/my_robot_description
+[0.149s] -- Install configuration: ""
+[0.150s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/launch
+[0.150s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/launch/display.launch
+[0.151s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/launch/gazebo.launch
+[0.151s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/meshes
+[0.152s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/meshes/Link_4.STL
+[0.152s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/meshes/link_3.STL
+[0.152s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/meshes/link_1.STL
+[0.153s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/meshes/link_2.STL
+[0.153s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/meshes/grab.STL
+[0.153s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/meshes/base_link.STL
+[0.153s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/urdf
+[0.153s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/urdf/my_robot_description.urdf
+[0.153s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/urdf/my_robot_description.csv
+[0.154s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/textures
+[0.154s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/config
+[0.154s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/config/joint_names_robotic arm mine.STEP.SLDASM.yaml
+[0.154s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/ament_index/resource_index/package_run_dependencies/my_robot_description
+[0.154s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/ament_index/resource_index/parent_prefix_path/my_robot_description
+[0.155s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.sh
+[0.156s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.dsv
+[0.157s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/environment/path.sh
+[0.158s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/environment/path.dsv
+[0.158s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/local_setup.bash
+[0.159s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/local_setup.sh
+[0.159s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/local_setup.zsh
+[0.160s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/local_setup.dsv
+[0.161s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/package.dsv
+[0.162s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/ament_index/resource_index/packages/my_robot_description
+[0.162s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig.cmake
+[0.163s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig-version.cmake
+[0.163s] -- Up-to-date: /home/dxf/Desktop/li/moveit_ws/install/my_robot_description/share/my_robot_description/package.xml
+[0.165s] Invoked command in '/home/dxf/Desktop/li/moveit_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dxf/Desktop/li/moveit_ws/build/my_robot_description

@@ -1,0 +1,9 @@
+/home/dxf/Desktop/li/moveit_ws/src/micro_urdf/build/micro_urdf/CMakeFiles/uninstall.dir
+/home/dxf/Desktop/li/moveit_ws/src/micro_urdf/build/micro_urdf/CMakeFiles/micro_urdf_uninstall.dir
+/home/dxf/Desktop/li/moveit_ws/src/micro_urdf/build/micro_urdf/CMakeFiles/test.dir
+/home/dxf/Desktop/li/moveit_ws/src/micro_urdf/build/micro_urdf/CMakeFiles/edit_cache.dir
+/home/dxf/Desktop/li/moveit_ws/src/micro_urdf/build/micro_urdf/CMakeFiles/rebuild_cache.dir
+/home/dxf/Desktop/li/moveit_ws/src/micro_urdf/build/micro_urdf/CMakeFiles/list_install_components.dir
+/home/dxf/Desktop/li/moveit_ws/src/micro_urdf/build/micro_urdf/CMakeFiles/install.dir
+/home/dxf/Desktop/li/moveit_ws/src/micro_urdf/build/micro_urdf/CMakeFiles/install/local.dir
+/home/dxf/Desktop/li/moveit_ws/src/micro_urdf/build/micro_urdf/CMakeFiles/install/strip.dir

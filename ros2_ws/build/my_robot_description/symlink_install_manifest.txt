@@ -6,8 +6,8 @@
 /home/dxf/Desktop/li/ros2_ws/install/my_robot_description/share/my_robot_description/meshes/link_1.STL
 /home/dxf/Desktop/li/ros2_ws/install/my_robot_description/share/my_robot_description/meshes/link_2.STL
 /home/dxf/Desktop/li/ros2_ws/install/my_robot_description/share/my_robot_description/meshes/link_3.STL
-/home/dxf/Desktop/li/ros2_ws/install/my_robot_description/share/my_robot_description/urdf/robotic arm mine.STEP.SLDASM.csv
-/home/dxf/Desktop/li/ros2_ws/install/my_robot_description/share/my_robot_description/urdf/robotic arm mine.STEP.SLDASM.urdf
+/home/dxf/Desktop/li/ros2_ws/install/my_robot_description/share/my_robot_description/urdf/my_robot_description.csv
+/home/dxf/Desktop/li/ros2_ws/install/my_robot_description/share/my_robot_description/urdf/my_robot_description.urdf
 /home/dxf/Desktop/li/ros2_ws/install/my_robot_description/share/ament_index/resource_index/package_run_dependencies/my_robot_description
 /home/dxf/Desktop/li/ros2_ws/install/my_robot_description/share/ament_index/resource_index/parent_prefix_path/my_robot_description
 /home/dxf/Desktop/li/ros2_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.sh
