@@ -1,0 +1,41 @@
+[0.022s] Invoking command in '/home/dxf/Desktop/li/ros2_ws/build/my_robot_description': /usr/bin/cmake /home/dxf/Desktop/li/ros2_ws/src/my_robot_description -DCMAKE_INSTALL_PREFIX=/home/dxf/Desktop/li/ros2_ws/install/my_robot_description
+[0.070s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.070s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[0.070s]   CMake.
+[0.070s] 
+[0.071s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.071s]   CMake that the project does not need compatibility with older versions.
+[0.071s] 
+[0.071s] [0m
+[0.264s] -- The C compiler identification is GNU 11.4.0
+[0.468s] -- The CXX compiler identification is GNU 11.4.0
+[0.499s] -- Detecting C compiler ABI info
+[0.664s] -- Detecting C compiler ABI info - done
+[0.692s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.693s] -- Detecting C compile features
+[0.695s] -- Detecting C compile features - done
+[0.710s] -- Detecting CXX compiler ABI info
+[0.894s] -- Detecting CXX compiler ABI info - done
+[0.922s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.924s] -- Detecting CXX compile features
+[0.925s] -- Detecting CXX compile features - done
+[0.966s] [31mCMake Error at CMakeLists.txt:5 (find_package):
+[0.967s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.967s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.967s]   CMake did not find one.
+[0.967s] 
+[0.968s]   Could not find a package configuration file provided by "catkin" with any
+[0.968s]   of the following names:
+[0.968s] 
+[0.968s]     catkinConfig.cmake
+[0.968s]     catkin-config.cmake
+[0.968s] 
+[0.968s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.969s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.969s]   provides a separate development package or SDK, be sure it has been
+[0.969s]   installed.
+[0.969s] 
+[0.970s] -- Configuring incomplete, errors occurred!
+[0.970s] See also "/home/dxf/Desktop/li/ros2_ws/build/my_robot_description/CMakeFiles/CMakeOutput.log".
+[0.970s] [0m
+[0.978s] Invoked command in '/home/dxf/Desktop/li/ros2_ws/build/my_robot_description' returned '1': /usr/bin/cmake /home/dxf/Desktop/li/ros2_ws/src/my_robot_description -DCMAKE_INSTALL_PREFIX=/home/dxf/Desktop/li/ros2_ws/install/my_robot_description

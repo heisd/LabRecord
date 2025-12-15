@@ -1,0 +1,48 @@
+[0.021s] Invoking command in '/home/dxf/Desktop/li/ros2_ws/build/robotic': /usr/bin/cmake /home/dxf/Desktop/li/ros2_ws/src/SWurdf/robotic arm mine.STEP.SLDASM -DCMAKE_INSTALL_PREFIX=/home/dxf/Desktop/li/ros2_ws/install/robotic
+[0.072s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.072s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[0.072s]   CMake.
+[0.073s] 
+[0.073s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.073s]   CMake that the project does not need compatibility with older versions.
+[0.073s] 
+[0.073s] [0m
+[0.087s] [0mCMake Error: Could not find cmake module file: CMakeDeterminearmCompiler.cmake[0m
+[0.087s] [0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+[0.087s] Missing variable is:
+[0.088s] CMAKE_arm_COMPILER_ENV_VAR[0m
+[0.088s] [0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+[0.088s] Missing variable is:
+[0.088s] CMAKE_arm_COMPILER[0m
+[0.088s] [0mCMake Error: Could not find cmake module file: /home/dxf/Desktop/li/ros2_ws/build/robotic/CMakeFiles/3.22.1/CMakearmCompiler.cmake[0m
+[0.088s] [0mCMake Error: Could not find cmake module file: CMakeDeterminemine.STEP.SLDASMCompiler.cmake[0m
+[0.088s] [0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+[0.088s] Missing variable is:
+[0.089s] CMAKE_mine.STEP.SLDASM_COMPILER_ENV_VAR[0m
+[0.089s] [0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+[0.089s] Missing variable is:
+[0.089s] CMAKE_mine.STEP.SLDASM_COMPILER[0m
+[0.089s] [0mCMake Error: Could not find cmake module file: /home/dxf/Desktop/li/ros2_ws/build/robotic/CMakeFiles/3.22.1/CMakemine.STEP.SLDASMCompiler.cmake[0m
+[0.091s] [31mCMake Error at CMakeLists.txt:3 (project):
+[0.091s]   No CMAKE_arm_COMPILER could be found.
+[0.091s] 
+[0.092s]   Tell CMake where to find the compiler by setting the CMake cache entry
+[0.092s]   CMAKE_arm_COMPILER to the full path to the compiler, or to the compiler
+[0.092s]   name if it is in the PATH.
+[0.092s] 
+[0.092s] -- Configuring incomplete, errors occurred!
+[0.092s] See also "/home/dxf/Desktop/li/ros2_ws/build/robotic/CMakeFiles/CMakeOutput.log".
+[0.093s] [0m
+[0.093s] [0mCMake Error: Could not find cmake module file: CMakearmInformation.cmake[0m
+[0.093s] [31mCMake Error at CMakeLists.txt:3 (project):
+[0.093s]   No CMAKE_mine.STEP.SLDASM_COMPILER could be found.
+[0.093s] 
+[0.093s]   Tell CMake where to find the compiler by setting the CMake cache entry
+[0.093s]   CMAKE_mine.STEP.SLDASM_COMPILER to the full path to the compiler, or to the
+[0.094s]   compiler name if it is in the PATH.
+[0.094s] 
+[0.094s] [0m
+[0.094s] [0mCMake Error: Could not find cmake module file: CMakemine.STEP.SLDASMInformation.cmake[0m
+[0.094s] [0mCMake Error: CMAKE_arm_COMPILER not set, after EnableLanguage[0m
+[0.094s] [0mCMake Error: CMAKE_mine.STEP.SLDASM_COMPILER not set, after EnableLanguage[0m
+[0.101s] Invoked command in '/home/dxf/Desktop/li/ros2_ws/build/robotic' returned '1': /usr/bin/cmake /home/dxf/Desktop/li/ros2_ws/src/SWurdf/robotic arm mine.STEP.SLDASM -DCMAKE_INSTALL_PREFIX=/home/dxf/Desktop/li/ros2_ws/install/robotic

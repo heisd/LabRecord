@@ -1,0 +1,2 @@
+Invoking command in '/home/dxf/Desktop/li/ros2_ws/build/my_robot_description': /usr/bin/cmake /home/dxf/Desktop/li/ros2_ws/src/my_robot_description -DCMAKE_INSTALL_PREFIX=/home/dxf/Desktop/li/ros2_ws/install/my_robot_description
+Invoked command in '/home/dxf/Desktop/li/ros2_ws/build/my_robot_description' returned '1': /usr/bin/cmake /home/dxf/Desktop/li/ros2_ws/src/my_robot_description -DCMAKE_INSTALL_PREFIX=/home/dxf/Desktop/li/ros2_ws/install/my_robot_description

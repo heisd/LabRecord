@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="robotic arm mine.STEP.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.091959 0.026985 -0.17169"
+        rpy="0 0 0" />
+      <mass
+        value="0.092187" />
+      <inertia
+        ixx="0.00010245"
+        ixy="1.4538E-09"
+        ixz="1.8672E-06"
+        iyy="0.0001058"
+        iyz="-2.8355E-11"
+        izz="0.00019857" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotic arm mine.STEP.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotic arm mine.STEP.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="-0.00154241341781598 0.0100013350004457 0.00024229829884681"
+        rpy="0 0 0" />
+      <mass
+        value="0.036067227742246" />
+      <inertia
+        ixx="6.63657864876778E-06"
+        ixy="8.80269449010779E-11"
+        ixz="-2.54280343091645E-08"
+        iyy="1.00325657295449E-05"
+        iyz="5.58302487667919E-11"
+        izz="5.76334895905913E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotic arm mine.STEP.SLDASM/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotic arm mine.STEP.SLDASM/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="0.10523 0.12001 0.040127"
+      rpy="-1.5645 0 -1.5513" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="17"
+      velocity="6" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="0.0804914911932472 0.00999939035036593 -0.00069999999999977"
+        rpy="0 0 0" />
+      <mass
+        value="0.0495461612560023" />
+      <inertia
+        ixx="1.24162296730713E-05"
+        ixy="1.27054942088145E-20"
+        ixz="-9.70779166892233E-20"
+        iyy="4.03832372625596E-05"
+        iyz="-1.00585162486448E-21"
+        izz="3.13050058803983E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotic arm mine.STEP.SLDASM/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotic arm mine.STEP.SLDASM/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="-0.0035304 0.0068889 5E-05"
+      rpy="0 0 -0.52728" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="17"
+      velocity="6" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="0.00653161285211037 -0.0199332386166537 4.30811515975127E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0705058258846531" />
+      <inertia
+        ixx="2.06638121586508E-05"
+        ixy="-2.67090290954804E-09"
+        ixz="5.58198148244558E-11"
+        iyy="1.38633050563832E-05"
+        iyz="4.44011945952539E-11"
+        izz="2.98455783729426E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotic arm mine.STEP.SLDASM/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotic arm mine.STEP.SLDASM/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="revolute">
+    <origin
+      xyz="0.14167 0.034057 0.0066836"
+      rpy="2.8085 1.5708 0" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="17"
+      velocity="6" />
+  </joint>
+  <link
+    name="Link_4">
+    <inertial>
+      <origin
+        xyz="-0.0193434356658074 0.0100008107329039 0.000147236350600766"
+        rpy="0 0 0" />
+      <mass
+        value="0.0593537751629533" />
+      <inertia
+        ixx="1.05306142744019E-05"
+        ixy="8.81772828823235E-11"
+        ixz="-2.54284235351203E-08"
+        iyy="1.59572296823589E-05"
+        iyz="5.56917440389303E-11"
+        izz="9.24516004368596E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotic arm mine.STEP.SLDASM/meshes/Link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotic arm mine.STEP.SLDASM/meshes/Link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="revolute">
+    <origin
+      xyz="0.0058687 -0.10605 0.014804"
+      rpy="-1.5708 0.73124 1.5708" />
+    <parent
+      link="link_3" />
+    <child
+      link="Link_4" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="17"
+      velocity="6" />
+  </joint>
+  <link
+    name="grab">
+    <inertial>
+      <origin
+        xyz="0.030736 0.046969 0.0036819"
+        rpy="0 0 0" />
+      <mass
+        value="0.021709" />
+      <inertia
+        ixx="5.0488E-06"
+        ixy="6.4622E-08"
+        ixz="-2.0046E-12"
+        iyy="2.0398E-06"
+        iyz="4.7424E-12"
+        izz="7.0141E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotic arm mine.STEP.SLDASM/meshes/grab.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotic arm mine.STEP.SLDASM/meshes/grab.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_5"
+    type="prismatic">
+    <origin
+      xyz="-0.071065 0.007 0.030039"
+      rpy="-1.5838 1.5708 -0.013243" />
+    <parent
+      link="Link_4" />
+    <child
+      link="grab" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.57"
+      effort="17"
+      velocity="1" />
+  </joint>
+</robot>
