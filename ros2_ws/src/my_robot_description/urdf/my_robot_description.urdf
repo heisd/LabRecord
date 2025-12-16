@@ -40,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://my_robot_description/meshes/base_link.STL" />
+          filename="package://my_robot_description/meshes/base_link.STL" scale="0.95 0.95 0.95" />
       </geometry>
     </collision>
   </link>
@@ -80,7 +80,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://my_robot_description/meshes/link_1.STL" />
+          filename="package://my_robot_description/meshes/link_1.STL" scale="0.95 0.95 0.95" />
       </geometry>
     </collision>
   </link>
@@ -138,7 +138,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://my_robot_description/meshes/link_2.STL" />
+          filename="package://my_robot_description/meshes/link_2.STL" scale="0.95 0.95 0.95" />
       </geometry>
     </collision>
   </link>
@@ -196,7 +196,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://my_robot_description/meshes/link_3.STL" />
+          filename="package://my_robot_description/meshes/link_3.STL" scale="0.95 0.95 0.95" />
       </geometry>
     </collision>
   </link>
@@ -254,7 +254,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://my_robot_description/meshes/Link_4.STL" />
+          filename="package://my_robot_description/meshes/Link_4.STL" scale="0.95 0.95 0.95" />
       </geometry>
     </collision>
   </link>
@@ -312,7 +312,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://my_robot_description/meshes/grab.STL" />
+          filename="package://my_robot_description/meshes/grab.STL" scale="0.95 0.95 0.95" />
       </geometry>
     </collision>
   </link>
