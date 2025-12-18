@@ -1,0 +1,30 @@
+<?xml version = "1.0"?>
+<robot name ="li">
+<link name ="base_link">
+<!--定义零件的惯性参数-->
+<inertial>
+<!--1.定义零件的重心-->
+<origin xyz =""rpy="0 0 0"/>
+<!--2.定义零件的重量-->
+<mass value=""/>
+<!--3.定义零件的转动惯量矩阵-->
+<inertia ixx="" iyy="" izz="" ixy ="" ixz ="" iyz =""/>
+</inertia>
+<!--上面的参数需要使用SolidWorks或者其他专业软件导出-->
+<!--我们手工无法获取-->
+<visual>
+<!--定义零件中心位置和俯仰角-->
+<origin xyz="0 0 0" rpy ="0 0 0"/>
+<geometry>
+
+</geometry>
+
+<visual>
+</link>
+<joint name ="joint_1">
+
+
+
+
+
+</robot>

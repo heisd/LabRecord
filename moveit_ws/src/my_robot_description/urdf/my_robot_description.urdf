@@ -95,7 +95,7 @@
     <child
       link="link_1" />
     <axis
-      xyz="0 0 1" />
+      xyz="1 0 0" />
     <limit
       lower="-1.57"
       upper="1.57"

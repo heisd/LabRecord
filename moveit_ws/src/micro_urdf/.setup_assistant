@@ -5,6 +5,6 @@ moveit_setup_assistant_config:
   srdf:
     relative_path: config/my_robot_description.srdf
   package_settings:
-    author_name: ""
-    author_email: ""
+    author_name: "li"
+    author_email: "2284610019@qq.com"
     generated_timestamp: 1765791152
