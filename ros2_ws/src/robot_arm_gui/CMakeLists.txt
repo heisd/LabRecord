@@ -40,12 +40,20 @@ include_directories(
   ${Qt5Gui_INCLUDE_DIRS}
 )
 
-# 主程序
+# 需要 MOC 处理的头文件（包含 Q_OBJECT 宏）
+set(MOC_HEADERS
+  include/robot_arm_gui/main_window.hpp
+  include/robot_arm_gui/rviz_panel.hpp
+  include/robot_arm_gui/joint_control_panel.hpp
+)
+
+# 主程序 - 必须包含头文件以便 AUTOMOC 处理
 add_executable(robot_arm_gui
   src/main.cpp
   src/main_window.cpp
   src/rviz_panel.cpp
   src/joint_control_panel.cpp
+  ${MOC_HEADERS}
 )
 
 target_link_libraries(robot_arm_gui
