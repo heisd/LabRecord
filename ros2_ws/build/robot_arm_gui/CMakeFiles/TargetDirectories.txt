@@ -1,0 +1,11 @@
+/home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui/CMakeFiles/uninstall.dir
+/home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui/CMakeFiles/robot_arm_gui_uninstall.dir
+/home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui/CMakeFiles/robot_arm_gui.dir
+/home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui/CMakeFiles/test.dir
+/home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui/CMakeFiles/edit_cache.dir
+/home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui/CMakeFiles/rebuild_cache.dir
+/home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui/CMakeFiles/list_install_components.dir
+/home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui/CMakeFiles/install.dir
+/home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui/CMakeFiles/install/local.dir
+/home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui/CMakeFiles/install/strip.dir
+/home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui/CMakeFiles/robot_arm_gui_autogen.dir

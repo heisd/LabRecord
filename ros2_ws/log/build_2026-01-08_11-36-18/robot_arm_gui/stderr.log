@@ -1,0 +1,30 @@
+In file included from [01m[K/home/dxf/Desktop/li/ros2_ws/src/robot_arm_gui/src/main_window.cpp:1[m[K:
+[01m[K/home/dxf/Desktop/li/ros2_ws/src/robot_arm_gui/include/robot_arm_gui/main_window.hpp:12:10:[m[K [01;31m[Kerror: [m[K#include expects "FILENAME" or <FILENAME>
+   12 | #include
+      |          [01;31m[K^[m[K
+In file included from [01m[K/home/dxf/Desktop/li/ros2_ws/src/robot_arm_gui/src/main.cpp:7[m[K:
+[01m[K/home/dxf/Desktop/li/ros2_ws/src/robot_arm_gui/include/robot_arm_gui/main_window.hpp:12:10:[m[K [01;31m[Kerror: [m[K#include expects "FILENAME" or <FILENAME>
+   12 | #include
+      |          [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/robot_arm_gui.dir/build.make:90：CMakeFiles/robot_arm_gui.dir/src/main.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+[01m[K/home/dxf/Desktop/li/ros2_ws/src/robot_arm_gui/src/main_window.cpp:[m[K In member function ‘[01m[Kvoid MainWindow::setupUi()[m[K’:
+[01m[K/home/dxf/Desktop/li/ros2_ws/src/robot_arm_gui/src/main_window.cpp:99:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kreset_view[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   99 |     QAction* [01;35m[Kreset_view[m[K = view_menu->addAction("重置视角(&R)");
+      |              [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/dxf/Desktop/li/ros2_ws/src/robot_arm_gui/src/rviz_panel.cpp:[m[K In member function ‘[01m[Kvoid RvizPanel::setupRviz()[m[K’:
+[01m[K/home/dxf/Desktop/li/ros2_ws/src/robot_arm_gui/src/rviz_panel.cpp:82:14:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krviz_common::VisualizationManager::VisualizationManager(rviz_common::RenderPanel*&, rclcpp::Node::SharedPtr&, std::unique_ptr<DummyWindowManager, std::default_delete<DummyWindowManager> >::pointer, std::shared_ptr<rclcpp::Clock>&)[m[K’
+   82 |         clock[01;31m[K)[m[K;
+      |              [01;31m[K^[m[K
+In file included from [01m[K/home/dxf/Desktop/li/ros2_ws/src/robot_arm_gui/include/robot_arm_gui/rviz_panel.hpp:10[m[K,
+                 from [01m[K/home/dxf/Desktop/li/ros2_ws/src/robot_arm_gui/src/rviz_panel.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rviz_common/rviz_common/visualization_manager.hpp:103:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krviz_common::VisualizationManager::VisualizationManager(rviz_common::RenderPanel*, rviz_common::ros_integration::RosNodeAbstractionIface::WeakPtr, rviz_common::WindowManagerInterface*, rclcpp::Clock::SharedPtr)[m[K’
+  103 |   explicit [01;36m[KVisualizationManager[m[K(
+      |            [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rviz_common/rviz_common/visualization_manager.hpp:105:55:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Krclcpp::Node::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::Node>[m[K’} to ‘[01m[Krviz_common::ros_integration::RosNodeAbstractionIface::WeakPtr[m[K’ {aka ‘[01m[Kstd::weak_ptr<rviz_common::ros_integration::RosNodeAbstractionIface>[m[K’}
+  105 |     [01;36m[Kros_integration::RosNodeAbstractionIface::WeakPtr ros_node_abstraction[m[K,
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/robot_arm_gui.dir/build.make:118：CMakeFiles/robot_arm_gui.dir/src/rviz_panel.cpp.o] 错误 1
+gmake[2]: *** [CMakeFiles/robot_arm_gui.dir/build.make:104：CMakeFiles/robot_arm_gui.dir/src/main_window.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:138：CMakeFiles/robot_arm_gui.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

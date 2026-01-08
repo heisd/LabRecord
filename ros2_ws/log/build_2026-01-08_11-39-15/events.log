@@ -1,0 +1,5 @@
+[0.000000] (-) TimerEvent: {}
+[0.001431] (-) JobUnselected: {'identifier': 'my_robot_description'}
+[0.001707] (-) JobUnselected: {'identifier': 'robot_arm_gui'}
+[0.001926] (-) JobUnselected: {'identifier': 'robot_arm_gui'}
+[0.002126] (-) EventReactorShutdown: {}

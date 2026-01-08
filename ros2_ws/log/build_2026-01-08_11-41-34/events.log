@@ -1,0 +1,287 @@
+[0.000000] (-) TimerEvent: {}
+[0.000653] (-) JobUnselected: {'identifier': 'my_robot_description'}
+[0.001090] (robot_arm_gui) JobQueued: {'identifier': 'robot_arm_gui', 'dependencies': OrderedDict()}
+[0.001314] (robot_arm_gui) JobStarted: {'identifier': 'robot_arm_gui'}
+[0.018745] (robot_arm_gui) JobProgress: {'identifier': 'robot_arm_gui', 'progress': 'cmake'}
+[0.020590] (robot_arm_gui) JobProgress: {'identifier': 'robot_arm_gui', 'progress': 'build'}
+[0.022094] (robot_arm_gui) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui', '--', '-j6', '-l6'], 'cwd': '/home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'dxf'), ('SSH_CLIENT', '192.168.0.211 61973 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/dxf/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/opencv410/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/usr/local/opencv410/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/dxf/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/dxf'), ('OLDPWD', '/home/dxf/Desktop/li'), ('TERM_PROGRAM_VERSION', '1.107.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-1c7b7cb0-85db-4b42-a797-a0deb71b5b09.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/dxf/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/dxf/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dxf'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/opencv410/lib/pkgconfig:/usr/local/opencv410/lib/pkgconfig:'), ('CLAUDE_CODE_SSE_PORT', '47546'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '18'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/dxf/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/dxf/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/dxf/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/bin/remote-cli:/home/dxf/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ced936a5f0.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('OpenCV_DIR', '/usr/local/opencv410/lib/cmake/opencv4'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui'), ('SSH_CONNECTION', '192.168.0.211 61973 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/usr/local/opencv410:/usr/local/opencv410::/opt/ros/humble')]), 'shell': False}
+[0.099957] (-) TimerEvent: {}
+[0.159313] (robot_arm_gui) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199621] (-) TimerEvent: {}
+[0.300330] (-) TimerEvent: {}
+[0.401013] (-) TimerEvent: {}
+[0.479593] (robot_arm_gui) StdoutLine: {'line': b'-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.501197] (-) TimerEvent: {}
+[0.560030] (robot_arm_gui) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.566201] (robot_arm_gui) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.582521] (robot_arm_gui) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.601372] (-) TimerEvent: {}
+[0.605744] (robot_arm_gui) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.635441] (robot_arm_gui) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.701602] (-) TimerEvent: {}
+[0.715097] (robot_arm_gui) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.718728] (robot_arm_gui) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.801789] (-) TimerEvent: {}
+[0.902512] (-) TimerEvent: {}
+[0.952287] (robot_arm_gui) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.002700] (-) TimerEvent: {}
+[1.067438] (robot_arm_gui) StdoutLine: {'line': b'-- Found rviz_common: 11.2.23 (/opt/ros/humble/share/rviz_common/cmake)\n'}
+[1.102314] (robot_arm_gui) StdoutLine: {'line': b"-- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'\n"}
+[1.102813] (-) TimerEvent: {}
+[1.112910] (robot_arm_gui) StdoutLine: {'line': b"-- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'\n"}
+[1.116278] (robot_arm_gui) StdoutLine: {'line': b'-- Found OGRE\n'}
+[1.116608] (robot_arm_gui) StdoutLine: {'line': b'--   static     : OFF\n'}
+[1.116770] (robot_arm_gui) StdoutLine: {'line': b'--   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume\n'}
+[1.116973] (robot_arm_gui) StdoutLine: {'line': b'--   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[1.117188] (robot_arm_gui) StdoutLine: {'line': b'--   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media\n'}
+[1.117337] (robot_arm_gui) StdoutLine: {'line': b'-- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain\n'}
+[1.117510] (robot_arm_gui) StdoutLine: {'line': b'-- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib\n'}
+[1.117647] (robot_arm_gui) StdoutLine: {'line': b'-- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[1.117779] (robot_arm_gui) StdoutLine: {'line': b'-- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE\n'}
+[1.117907] (robot_arm_gui) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[1.118036] (robot_arm_gui) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[1.118162] (robot_arm_gui) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[1.118286] (robot_arm_gui) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[1.203024] (-) TimerEvent: {}
+[1.272638] (robot_arm_gui) StdoutLine: {'line': b'-- library: /usr/lib/aarch64-linux-gnu/libcurl.so\n'}
+[1.303210] (-) TimerEvent: {}
+[1.403907] (-) TimerEvent: {}
+[1.407126] (robot_arm_gui) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.504090] (-) TimerEvent: {}
+[1.604806] (-) TimerEvent: {}
+[1.705533] (-) TimerEvent: {}
+[1.753995] (robot_arm_gui) StdoutLine: {'line': b'-- Found rviz_default_plugins: 11.2.23 (/opt/ros/humble/share/rviz_default_plugins/cmake)\n'}
+[1.805719] (-) TimerEvent: {}
+[1.906453] (-) TimerEvent: {}
+[2.007148] (-) TimerEvent: {}
+[2.082823] (robot_arm_gui) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.107344] (-) TimerEvent: {}
+[2.208064] (-) TimerEvent: {}
+[2.229541] (robot_arm_gui) StdoutLine: {'line': b'-- Generating done\n'}
+[2.246822] (robot_arm_gui) StdoutLine: {'line': b'-- Build files have been written to: /home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui\n'}
+[2.308269] (-) TimerEvent: {}
+[2.348553] (robot_arm_gui) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target robot_arm_gui\x1b[0m\n'}
+[2.405105] (robot_arm_gui) StdoutLine: {'line': b'[ 14%] Built target robot_arm_gui_autogen\n'}
+[2.408356] (-) TimerEvent: {}
+[2.436061] (robot_arm_gui) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_arm_gui\x1b[0m\n'}
+[2.508568] (-) TimerEvent: {}
+[2.534556] (robot_arm_gui) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/robot_arm_gui.dir/src/main.cpp.o\x1b[0m\n'}
+[2.549899] (robot_arm_gui) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/robot_arm_gui.dir/src/joint_control_panel.cpp.o\x1b[0m\n'}
+[2.550422] (robot_arm_gui) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/robot_arm_gui.dir/src/rviz_panel.cpp.o\x1b[0m\n'}
+[2.557225] (robot_arm_gui) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/robot_arm_gui.dir/src/main_window.cpp.o\x1b[0m\n'}
+[2.608749] (-) TimerEvent: {}
+[2.710038] (-) TimerEvent: {}
+[2.810782] (-) TimerEvent: {}
+[2.911555] (-) TimerEvent: {}
+[3.012248] (-) TimerEvent: {}
+[3.112995] (-) TimerEvent: {}
+[3.217285] (-) TimerEvent: {}
+[3.318024] (-) TimerEvent: {}
+[3.418731] (-) TimerEvent: {}
+[3.519930] (-) TimerEvent: {}
+[3.620685] (-) TimerEvent: {}
+[3.721476] (-) TimerEvent: {}
+[3.822304] (-) TimerEvent: {}
+[3.923079] (-) TimerEvent: {}
+[4.023879] (-) TimerEvent: {}
+[4.124656] (-) TimerEvent: {}
+[4.225471] (-) TimerEvent: {}
+[4.326601] (-) TimerEvent: {}
+[4.427610] (-) TimerEvent: {}
+[4.528629] (-) TimerEvent: {}
+[4.629762] (-) TimerEvent: {}
+[4.730854] (-) TimerEvent: {}
+[4.831956] (-) TimerEvent: {}
+[4.933141] (-) TimerEvent: {}
+[5.034278] (-) TimerEvent: {}
+[5.135380] (-) TimerEvent: {}
+[5.236494] (-) TimerEvent: {}
+[5.337578] (-) TimerEvent: {}
+[5.438716] (-) TimerEvent: {}
+[5.539547] (-) TimerEvent: {}
+[5.640335] (-) TimerEvent: {}
+[5.741090] (-) TimerEvent: {}
+[5.841839] (-) TimerEvent: {}
+[5.942621] (-) TimerEvent: {}
+[6.043379] (-) TimerEvent: {}
+[6.144172] (-) TimerEvent: {}
+[6.244920] (-) TimerEvent: {}
+[6.345707] (-) TimerEvent: {}
+[6.446501] (-) TimerEvent: {}
+[6.547279] (-) TimerEvent: {}
+[6.648097] (-) TimerEvent: {}
+[6.748815] (-) TimerEvent: {}
+[6.849541] (-) TimerEvent: {}
+[6.950274] (-) TimerEvent: {}
+[7.051047] (-) TimerEvent: {}
+[7.151807] (-) TimerEvent: {}
+[7.252542] (-) TimerEvent: {}
+[7.354270] (-) TimerEvent: {}
+[7.455742] (-) TimerEvent: {}
+[7.556581] (-) TimerEvent: {}
+[7.657454] (-) TimerEvent: {}
+[7.759398] (-) TimerEvent: {}
+[7.861139] (-) TimerEvent: {}
+[7.962785] (-) TimerEvent: {}
+[8.064491] (-) TimerEvent: {}
+[8.166273] (-) TimerEvent: {}
+[8.268196] (-) TimerEvent: {}
+[8.370046] (-) TimerEvent: {}
+[8.471854] (-) TimerEvent: {}
+[8.572620] (-) TimerEvent: {}
+[8.673418] (-) TimerEvent: {}
+[8.774578] (-) TimerEvent: {}
+[8.876670] (-) TimerEvent: {}
+[8.977718] (-) TimerEvent: {}
+[9.078731] (-) TimerEvent: {}
+[9.179797] (-) TimerEvent: {}
+[9.280860] (-) TimerEvent: {}
+[9.382555] (-) TimerEvent: {}
+[9.484009] (-) TimerEvent: {}
+[9.585782] (-) TimerEvent: {}
+[9.687447] (-) TimerEvent: {}
+[9.788204] (-) TimerEvent: {}
+[9.888951] (-) TimerEvent: {}
+[9.989747] (-) TimerEvent: {}
+[10.093746] (-) TimerEvent: {}
+[10.194824] (-) TimerEvent: {}
+[10.295600] (-) TimerEvent: {}
+[10.396783] (-) TimerEvent: {}
+[10.497872] (-) TimerEvent: {}
+[10.598904] (-) TimerEvent: {}
+[10.699936] (-) TimerEvent: {}
+[10.800945] (-) TimerEvent: {}
+[10.901914] (-) TimerEvent: {}
+[11.002713] (-) TimerEvent: {}
+[11.103536] (-) TimerEvent: {}
+[11.204308] (-) TimerEvent: {}
+[11.305129] (-) TimerEvent: {}
+[11.406251] (-) TimerEvent: {}
+[11.507328] (-) TimerEvent: {}
+[11.608410] (-) TimerEvent: {}
+[11.709417] (-) TimerEvent: {}
+[11.810790] (-) TimerEvent: {}
+[11.911544] (-) TimerEvent: {}
+[12.012362] (-) TimerEvent: {}
+[12.113157] (-) TimerEvent: {}
+[12.214010] (-) TimerEvent: {}
+[12.314850] (-) TimerEvent: {}
+[12.415697] (-) TimerEvent: {}
+[12.516485] (-) TimerEvent: {}
+[12.617282] (-) TimerEvent: {}
+[12.718026] (-) TimerEvent: {}
+[12.818887] (-) TimerEvent: {}
+[12.919692] (-) TimerEvent: {}
+[13.021142] (-) TimerEvent: {}
+[13.122485] (-) TimerEvent: {}
+[13.223367] (-) TimerEvent: {}
+[13.324399] (-) TimerEvent: {}
+[13.397903] (robot_arm_gui) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dxf/Desktop/li/ros2_ws/src/robot_arm_gui/src/rviz_panel.cpp:42:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::string RosNodeAbstractionWrapper::get_namespace() const\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[13.400505] (robot_arm_gui) StderrLine: {'line': b'   42 |     std::string \x1b[01;31m\x1b[Kget_namespace\x1b[m\x1b[K() const override {\n'}
+[13.400799] (robot_arm_gui) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.424596] (-) TimerEvent: {}
+[13.525377] (-) TimerEvent: {}
+[13.626345] (-) TimerEvent: {}
+[13.727364] (-) TimerEvent: {}
+[13.828171] (-) TimerEvent: {}
+[13.928936] (-) TimerEvent: {}
+[14.029746] (-) TimerEvent: {}
+[14.130583] (-) TimerEvent: {}
+[14.231353] (-) TimerEvent: {}
+[14.332170] (-) TimerEvent: {}
+[14.432934] (-) TimerEvent: {}
+[14.533689] (-) TimerEvent: {}
+[14.634443] (-) TimerEvent: {}
+[14.735232] (-) TimerEvent: {}
+[14.836033] (-) TimerEvent: {}
+[14.936790] (-) TimerEvent: {}
+[15.037551] (-) TimerEvent: {}
+[15.138330] (-) TimerEvent: {}
+[15.239101] (-) TimerEvent: {}
+[15.331864] (robot_arm_gui) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/aarch64-linux-gnu/c++/11/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[15.332458] (robot_arm_gui) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[15.332632] (robot_arm_gui) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/unordered_map:40\x1b[m\x1b[K,\n'}
+[15.332781] (robot_arm_gui) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:61\x1b[m\x1b[K,\n'}
+[15.332916] (robot_arm_gui) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[15.333046] (robot_arm_gui) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[15.333209] (robot_arm_gui) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/aarch64-linux-gnu/qt5/QtCore/qglobal.h:142\x1b[m\x1b[K,\n'}
+[15.333345] (robot_arm_gui) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/aarch64-linux-gnu/qt5/QtGui/qtguiglobal.h:43\x1b[m\x1b[K,\n'}
+[15.333473] (robot_arm_gui) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/aarch64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h:43\x1b[m\x1b[K,\n'}
+[15.333763] (robot_arm_gui) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/aarch64-linux-gnu/qt5/QtWidgets/qwidget.h:43\x1b[m\x1b[K,\n'}
+[15.333903] (robot_arm_gui) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/aarch64-linux-gnu/qt5/QtWidgets/QWidget:1\x1b[m\x1b[K,\n'}
+[15.334031] (robot_arm_gui) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/Desktop/li/ros2_ws/src/robot_arm_gui/include/robot_arm_gui/rviz_panel.hpp:4\x1b[m\x1b[K,\n'}
+[15.334161] (robot_arm_gui) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/Desktop/li/ros2_ws/src/robot_arm_gui/src/rviz_panel.cpp:1\x1b[m\x1b[K:\n'}
+[15.334284] (robot_arm_gui) StderrLine: {'line': b'/usr/include/c++/11/ext/new_allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = RosNodeAbstractionWrapper; _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = RosNodeAbstractionWrapper]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.334417] (robot_arm_gui) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/alloc_traits.h:516:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = RosNodeAbstractionWrapper; _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = RosNodeAbstractionWrapper; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<RosNodeAbstractionWrapper>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.334556] (robot_arm_gui) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = RosNodeAbstractionWrapper; _Alloc = std::allocator<RosNodeAbstractionWrapper>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.334684] (robot_arm_gui) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = RosNodeAbstractionWrapper; _Alloc = std::allocator<RosNodeAbstractionWrapper>; _Args = {std::shared_ptr<rclcpp::Node>&}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.334810] (robot_arm_gui) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<RosNodeAbstractionWrapper>; _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = RosNodeAbstractionWrapper; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.334966] (robot_arm_gui) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:409:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<RosNodeAbstractionWrapper>; _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = RosNodeAbstractionWrapper]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.335097] (robot_arm_gui) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:862:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = RosNodeAbstractionWrapper; _Alloc = std::allocator<RosNodeAbstractionWrapper>; _Args = {std::shared_ptr<rclcpp::Node>&}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.335226] (robot_arm_gui) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:878:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = RosNodeAbstractionWrapper; _Args = {std::shared_ptr<rclcpp::Node>&}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.335385] (robot_arm_gui) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dxf/Desktop/li/ros2_ws/src/robot_arm_gui/src/rviz_panel.cpp:104:76:\x1b[m\x1b[K   required from here\n'}
+[15.335558] (robot_arm_gui) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:162:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid new-expression of abstract class type \xe2\x80\x98\x1b[01m\x1b[KRosNodeAbstractionWrapper\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.335690] (robot_arm_gui) StderrLine: {'line': b'  162 |         { \x1b[01;31m\x1b[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)\x1b[m\x1b[K; }\n'}
+[15.335815] (robot_arm_gui) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.335935] (robot_arm_gui) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dxf/Desktop/li/ros2_ws/src/robot_arm_gui/src/rviz_panel.cpp:31:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  because the following virtual functions are pure within \xe2\x80\x98\x1b[01m\x1b[KRosNodeAbstractionWrapper\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.336074] (robot_arm_gui) StderrLine: {'line': b'   31 | class \x1b[01;36m\x1b[KRosNodeAbstractionWrapper\x1b[m\x1b[K : public rviz_common::ros_integration::RosNodeAbstractionIface\n'}
+[15.336196] (robot_arm_gui) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.336319] (robot_arm_gui) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rviz_common/rviz_common/display_context.hpp:40\x1b[m\x1b[K,\n'}
+[15.336442] (robot_arm_gui) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rviz_common/rviz_common/visualization_manager.hpp:44\x1b[m\x1b[K,\n'}
+[15.336564] (robot_arm_gui) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/Desktop/li/ros2_ws/src/robot_arm_gui/include/robot_arm_gui/rviz_panel.hpp:10\x1b[m\x1b[K,\n'}
+[15.336680] (robot_arm_gui) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/Desktop/li/ros2_ws/src/robot_arm_gui/src/rviz_panel.cpp:1\x1b[m\x1b[K:\n'}
+[15.336799] (robot_arm_gui) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rviz_common/rviz_common/ros_integration/ros_node_abstraction_iface.hpp:56:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K    \xe2\x80\x98\x1b[01m\x1b[Kvirtual std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > > rviz_common::ros_integration::RosNodeAbstractionIface::get_topic_names_and_types() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.336926] (robot_arm_gui) StderrLine: {'line': b'   56 |   \x1b[01;36m\x1b[Kget_topic_names_and_types\x1b[m\x1b[K() const = 0;\n'}
+[15.337044] (robot_arm_gui) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.339188] (-) TimerEvent: {}
+[15.440466] (-) TimerEvent: {}
+[15.541294] (-) TimerEvent: {}
+[15.643236] (-) TimerEvent: {}
+[15.745155] (-) TimerEvent: {}
+[15.846408] (-) TimerEvent: {}
+[15.947181] (-) TimerEvent: {}
+[16.047967] (-) TimerEvent: {}
+[16.148748] (-) TimerEvent: {}
+[16.150719] (robot_arm_gui) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/robot_arm_gui.dir/build.make:118\xef\xbc\x9aCMakeFiles/robot_arm_gui.dir/src/rviz_panel.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[16.151225] (robot_arm_gui) StderrLine: {'line': b'gmake[2]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe7\xad\x89\xe5\xbe\x85\xe6\x9c\xaa\xe5\xae\x8c\xe6\x88\x90\xe7\x9a\x84\xe4\xbb\xbb\xe5\x8a\xa1....\n'}
+[16.248930] (-) TimerEvent: {}
+[16.349796] (-) TimerEvent: {}
+[16.450523] (-) TimerEvent: {}
+[16.551297] (-) TimerEvent: {}
+[16.652069] (-) TimerEvent: {}
+[16.752795] (-) TimerEvent: {}
+[16.853526] (-) TimerEvent: {}
+[16.954323] (-) TimerEvent: {}
+[17.055057] (-) TimerEvent: {}
+[17.155821] (-) TimerEvent: {}
+[17.256573] (-) TimerEvent: {}
+[17.357322] (-) TimerEvent: {}
+[17.458032] (-) TimerEvent: {}
+[17.558792] (-) TimerEvent: {}
+[17.659596] (-) TimerEvent: {}
+[17.760404] (-) TimerEvent: {}
+[17.861133] (-) TimerEvent: {}
+[17.961918] (-) TimerEvent: {}
+[18.062669] (-) TimerEvent: {}
+[18.163486] (-) TimerEvent: {}
+[18.264261] (-) TimerEvent: {}
+[18.365001] (-) TimerEvent: {}
+[18.465800] (-) TimerEvent: {}
+[18.566545] (-) TimerEvent: {}
+[18.667284] (-) TimerEvent: {}
+[18.768079] (-) TimerEvent: {}
+[18.868859] (-) TimerEvent: {}
+[18.969590] (-) TimerEvent: {}
+[19.070304] (-) TimerEvent: {}
+[19.171052] (-) TimerEvent: {}
+[19.271858] (-) TimerEvent: {}
+[19.372626] (-) TimerEvent: {}
+[19.473502] (-) TimerEvent: {}
+[19.574320] (-) TimerEvent: {}
+[19.675082] (-) TimerEvent: {}
+[19.719614] (robot_arm_gui) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:138\xef\xbc\x9aCMakeFiles/robot_arm_gui.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[19.720301] (robot_arm_gui) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[19.766419] (robot_arm_gui) CommandEnded: {'returncode': 2}
+[19.775168] (-) TimerEvent: {}
+[19.809697] (robot_arm_gui) JobEnded: {'identifier': 'robot_arm_gui', 'rc': 2}
+[19.821063] (-) EventReactorShutdown: {}
