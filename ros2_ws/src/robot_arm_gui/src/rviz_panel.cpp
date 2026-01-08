@@ -39,7 +39,8 @@ public:
         return node_->get_name();
     }
 
-    std::string get_namespace() const override {
+    // get_namespace 不是基类的虚函数，所以不能用 override
+    std::string get_namespace() const {
         return node_->get_namespace();
     }
 
