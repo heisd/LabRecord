@@ -137,6 +137,13 @@ image->subProp("Topic")->setValue("/camera/image_raw");
 
 ## 故障排除
 [ERROR] [robot_arm_gui-2]: process has died [pid 21305, exit code -11, cmd '/home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/lib/robot_arm_gui/robot_arm_gui --ros-args -r __node:=robot_arm_gui'].
+[robot_arm_gui-2] RvizPanel constructor completed
+[robot_arm_gui-2] [RViz] Step 1: Creating RenderPanel...
+[robot_arm_gui-2] NvMapMemAllocInternalTagged: 1075072515 error 12
+[robot_arm_gui-2] NvMapMemHandleAlloc: error 0
+[robot_arm_gui-2] NvMapMemAllocInternalTagged: 1075072515 error 12
+[robot_arm_gui-2] NvMapMemHandleAlloc: error 0
+[ERROR] [robot_arm_gui-2]: process has died [pid 23983, exit code -11, cmd '/home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/lib/robot_arm_gui/robot_arm_gui --ros-args -r __node:=robot_arm_gui'].
 
 ### 黑屏问题
 
@@ -145,7 +152,52 @@ image->subProp("Topic")->setValue("/camera/image_raw");
 1. 确保显卡驱动正确安装
 2. 尝试设置环境变量：`export LIBGL_ALWAYS_SOFTWARE=1`
 3. 检查 Ogre 渲染后端
+```bash
+# 设置 Ogre 渲染模式
+export OGRE_RTT_MODE=Copy
 
+# 禁用 VSYNC 以减少 GPU 负担
+export __GL_SYNC_TO_VBLANK=0
+
+# 使用 EGL 而不是 GLX（Jetson 推荐）
+export QT_QPA_PLATFORM=xcb
+export QT_XCB_GL_INTEGRATION=xcb_egl
+
+# 运行
+ros2 run robot_arm_gui robot_arm_gui
+
+
+```
+输出如下
+```bash
+RvizPanel constructor completed
+[RViz] Step 1: Creating RenderPanel...
+NvMapMemAllocInternalTagged: 1075072515 error 12
+NvMapMemHandleAlloc: error 0
+NvMapMemAllocInternalTagged: 1075072515 error 12
+NvMapMemHandleAlloc: error 0
+[rviz_rendering:debug] Available Renderers(1): OpenGL Rendering Subsystem, at ./src/rviz_rendering/render_system.cpp:301
+[rviz_rendering:info] Stereo is NOT SUPPORTED, at ./src/rviz_rendering/render_system.cpp:543
+[rviz_rendering:info] OpenGl version: 4.6 (GLSL 4.6), at ./src/rviz_rendering/render_system.cpp:284
+[rviz_rendering:info] Stereo is NOT SUPPORTED, at ./src/rviz_rendering/render_system.cpp:543
+[RViz] Step 2: Creating clock and window manager...
+[RViz] Step 3: Creating VisualizationManager...
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/TF.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_default_plugins/icons/classes/TF.svg]: Couldn't open file /opt/ros/humble/share/rviz_default_plugins/icons/classes/TF.svg, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/TF.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/classes/Identity.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_common/icons/classes/Identity.svg]: Couldn't open file /opt/ros/humble/share/rviz_common/icons/classes/Identity.svg, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/classes/Identity.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_common/icons/classes/Identity.png]: Couldn't open file /opt/ros/humble/share/rviz_common/icons/classes/Identity.png, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/default_class_icon.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/options.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/ok.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/warning.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/error.png, at ./src/rviz_common/load_resource.cpp:71
+[ros2run]: Segmentation fault
+
+
+```
 ### robot_description 话题为空
 
 确保 `robot_state_publisher` 正在运行并发布 `/robot_description` 话题：
