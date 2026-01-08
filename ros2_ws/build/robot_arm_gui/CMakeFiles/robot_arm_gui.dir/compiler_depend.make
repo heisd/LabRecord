@@ -4311,7 +4311,14 @@ CMakeFiles/robot_arm_gui.dir/src/rviz_panel.cpp.o: /home/dxf/Desktop/li/ros2_ws/
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qlocale.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qvariant.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qset.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontiguouscache.h
+  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontiguouscache.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QApplication \
+  /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qapplication.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcoreapplication.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcoreevent.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtCore/qeventloop.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtGui/qguiapplication.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtGui/qinputmethod.h
 
 
 /opt/ros/humble/include/rviz_rendering/rviz_rendering/visibility_control.hpp:

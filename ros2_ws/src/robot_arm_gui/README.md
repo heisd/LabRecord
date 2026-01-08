@@ -176,12 +176,20 @@ NvMapMemAllocInternalTagged: 1075072515 error 12
 NvMapMemHandleAlloc: error 0
 NvMapMemAllocInternalTagged: 1075072515 error 12
 NvMapMemHandleAlloc: error 0
+dxf@ubuntu:~/Desktop/li/ros2_ws$ ros2 run robot_arm_gui robot_arm_gui
+RvizPanel constructor completed
+[RViz] Step 1: Creating RenderPanel...
 [rviz_rendering:debug] Available Renderers(1): OpenGL Rendering Subsystem, at ./src/rviz_rendering/render_system.cpp:301
 [rviz_rendering:info] Stereo is NOT SUPPORTED, at ./src/rviz_rendering/render_system.cpp:543
 [rviz_rendering:info] OpenGl version: 4.6 (GLSL 4.6), at ./src/rviz_rendering/render_system.cpp:284
+[RViz] Step 1b: Showing RenderPanel...
 [rviz_rendering:info] Stereo is NOT SUPPORTED, at ./src/rviz_rendering/render_system.cpp:543
-[RViz] Step 2: Creating clock and window manager...
-[RViz] Step 3: Creating VisualizationManager...
+[RViz] Step 2: Initializing render window FIRST (for Jetson)...
+[RViz] Step 2b: Calling render_window->initialize()...
+[rviz_rendering:info] Stereo is NOT SUPPORTED, at ./src/rviz_rendering/render_system.cpp:543
+[RViz] Render window initialized
+[RViz] Step 3: Creating clock and window manager...
+[RViz] Step 4: Creating VisualizationManager...
 [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/TF.svg, at ./src/rviz_common/load_resource.cpp:71
 [rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_default_plugins/icons/classes/TF.svg]: Couldn't open file /opt/ros/humble/share/rviz_default_plugins/icons/classes/TF.svg, at ./src/rviz_common/load_resource.cpp:55
 [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/TF.png, at ./src/rviz_common/load_resource.cpp:71
@@ -195,6 +203,7 @@ NvMapMemHandleAlloc: error 0
 [rviz_common:debug] Load pixmap at package://rviz_common/icons/warning.png, at ./src/rviz_common/load_resource.cpp:71
 [rviz_common:debug] Load pixmap at package://rviz_common/icons/error.png, at ./src/rviz_common/load_resource.cpp:71
 [ros2run]: Segmentation fault
+
 
 
 ```

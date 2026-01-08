@@ -1,0 +1,27 @@
+[ 14%] [34m[1mAutomatic MOC and UIC for target robot_arm_gui[0m
+[ 14%] Built target robot_arm_gui_autogen
+[35m[1mConsolidate compiler generated dependencies of target robot_arm_gui[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/robot_arm_gui.dir/src/rviz_panel.cpp.o[0m
+[ 42%] [32m[1mLinking CXX executable robot_arm_gui[0m
+[100%] Built target robot_arm_gui
+-- Install configuration: ""
+-- Installing: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/lib/robot_arm_gui/robot_arm_gui
+-- Set runtime path of "/home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/lib/robot_arm_gui/robot_arm_gui" to ""
+-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/launch
+-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/launch/gui.launch.py
+-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/launch/full.launch.py
+-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/ament_index/resource_index/package_run_dependencies/robot_arm_gui
+-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/ament_index/resource_index/parent_prefix_path/robot_arm_gui
+-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/environment/ament_prefix_path.sh
+-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/environment/path.sh
+-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/environment/path.dsv
+-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/local_setup.bash
+-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/local_setup.sh
+-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/local_setup.zsh
+-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/local_setup.dsv
+-- Installing: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/package.dsv
+-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/ament_index/resource_index/packages/robot_arm_gui
+-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/cmake/robot_arm_guiConfig.cmake
+-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/cmake/robot_arm_guiConfig-version.cmake
+-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/package.xml
