@@ -97,32 +97,37 @@ void RvizPanel::initialize()
 
 void RvizPanel::setupRviz()
 {
-    // 初始化渲染窗口
-    render_panel_->getRenderWindow()->initialize();
-    
     // 创建时钟
     auto clock = node_->get_clock();
-    
+
     // 创建窗口管理器
     auto window_manager = new DummyWindowManager();
-    
+
     // 创建 ROS 节点抽象层包装器
     auto ros_node_abstraction = std::make_shared<RosNodeAbstractionWrapper>(node_);
-    
-    // 创建 VisualizationManager - 使用正确的 API
+
+    // 创建 VisualizationManager
     manager_ = new rviz_common::VisualizationManager(
         render_panel_,
         ros_node_abstraction,
         window_manager,
         clock);
-    
+
+    // 正确的初始化顺序：
+    // 1. 先用 manager 初始化 render_panel
     render_panel_->initialize(manager_);
-    
-    // 初始化管理器
+
+    // 2. 再初始化渲染窗口
+    auto render_window = render_panel_->getRenderWindow();
+    if (render_window) {
+        render_window->initialize();
+    }
+
+    // 3. 初始化管理器
     manager_->initialize();
     manager_->startUpdate();
-    
-    // 设置固定帧
+
+    // 4. 设置固定帧
     manager_->setFixedFrame("base_link");
 }
 
