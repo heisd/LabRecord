@@ -1,6 +1,0 @@
-[ 14%] [34m[1mAutomatic MOC and UIC for target robot_arm_gui[0m
-[ 14%] Built target robot_arm_gui_autogen
-[35m[1mConsolidate compiler generated dependencies of target robot_arm_gui[0m
-[ 28%] [32mBuilding CXX object CMakeFiles/robot_arm_gui.dir/src/main.cpp.o[0m
-[ 42%] [32mBuilding CXX object CMakeFiles/robot_arm_gui.dir/src/main_window.cpp.o[0m
-[ 57%] [32mBuilding CXX object CMakeFiles/robot_arm_gui.dir/src/rviz_panel.cpp.o[0m

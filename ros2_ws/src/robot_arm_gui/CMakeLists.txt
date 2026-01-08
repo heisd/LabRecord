@@ -41,12 +41,20 @@ include_directories(
 )
 
 # 主程序
+set(MOC_HEADERS
+  include/robot_arm_gui/main_window.hpp
+  include/robot_arm_gui/rviz_panel.hpp
+  include/robot_arm_gui/joint_control_panel.hpp
+)
+
 add_executable(robot_arm_gui
   src/main.cpp
   src/main_window.cpp
   src/rviz_panel.cpp
   src/joint_control_panel.cpp
+  ${MOC_HEADERS}  # 添加头文件让 AUTOMOC 处理
 )
+
 
 target_link_libraries(robot_arm_gui
   Qt5::Core

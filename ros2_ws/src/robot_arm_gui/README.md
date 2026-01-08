@@ -136,6 +136,7 @@ image->subProp("Topic")->setValue("/camera/image_raw");
 ```
 
 ## 故障排除
+[ERROR] [robot_arm_gui-2]: process has died [pid 21305, exit code -11, cmd '/home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/lib/robot_arm_gui/robot_arm_gui --ros-args -r __node:=robot_arm_gui'].
 
 ### 黑屏问题
 

@@ -1,2 +1,0 @@
-Invoking command in '/home/dxf/Desktop/li/ros2_ws/build/robotic': /usr/bin/cmake /home/dxf/Desktop/li/ros2_ws/src/SWurdf/robotic arm mine.STEP.SLDASM -DCMAKE_INSTALL_PREFIX=/home/dxf/Desktop/li/ros2_ws/install/robotic
-Invoked command in '/home/dxf/Desktop/li/ros2_ws/build/robotic' returned '1': /usr/bin/cmake /home/dxf/Desktop/li/ros2_ws/src/SWurdf/robotic arm mine.STEP.SLDASM -DCMAKE_INSTALL_PREFIX=/home/dxf/Desktop/li/ros2_ws/install/robotic
