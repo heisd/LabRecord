@@ -9,6 +9,7 @@
 #include <QVBoxLayout>
 #include <QDebug>
 #include <QApplication>
+#include <cstdio>
 
 // 简单的窗口管理器实现
 class DummyWindowManager : public rviz_common::WindowManagerInterface
@@ -100,16 +101,38 @@ void RvizPanel::initialize()
 void RvizPanel::setupRviz()
 {
     qDebug() << "[RViz] Step 1: Creating RenderPanel...";
+    fflush(stdout);
 
     // 在这里创建 RenderPanel（窗口已显示，OpenGL 上下文应该就绪）
     render_panel_ = new rviz_common::RenderPanel(this);
     layout_->addWidget(render_panel_);
 
+    qDebug() << "[RViz] Step 1b: Showing RenderPanel...";
+    fflush(stdout);
+
     // 确保 widget 已经被处理
     render_panel_->show();
     QApplication::processEvents();
 
-    qDebug() << "[RViz] Step 2: Creating clock and window manager...";
+    qDebug() << "[RViz] Step 2: Initializing render window FIRST (for Jetson)...";
+    fflush(stdout);
+
+    // 在 Jetson 上，需要先初始化渲染窗口
+    auto render_window = render_panel_->getRenderWindow();
+    if (render_window) {
+        qDebug() << "[RViz] Step 2b: Calling render_window->initialize()...";
+        fflush(stdout);
+        render_window->initialize();
+        qDebug() << "[RViz] Render window initialized";
+        fflush(stdout);
+    } else {
+        qWarning() << "[RViz] WARNING: render_window is null!";
+        fflush(stdout);
+        return;
+    }
+
+    qDebug() << "[RViz] Step 3: Creating clock and window manager...";
+    fflush(stdout);
 
     // 创建时钟
 
@@ -123,7 +146,8 @@ void RvizPanel::setupRviz()
 
     auto ros_node_abstraction = std::make_shared<RosNodeAbstractionWrapper>(node_);
 
-    qDebug() << "[RViz] Step 3: Creating VisualizationManager...";
+    qDebug() << "[RViz] Step 4: Creating VisualizationManager...";
+    fflush(stdout);
 
     // 创建 VisualizationManager
     manager_ = new rviz_common::VisualizationManager(
@@ -136,35 +160,28 @@ void RvizPanel::setupRviz()
 
         clock);
 
-    qDebug() << "[RViz] Step 4: Initializing render_panel...";
+    qDebug() << "[RViz] Step 5: Initializing render_panel with manager...";
+    fflush(stdout);
 
-    // 正确的初始化顺序：
-    // 1. 先用 manager 初始化 render_panel
+    // 用 manager 初始化 render_panel
     render_panel_->initialize(manager_);
 
-    qDebug() << "[RViz] Step 5: Initializing render window...";
-
-    // 2. 再初始化渲染窗口
-    auto render_window = render_panel_->getRenderWindow();
-    if (render_window) {
-        render_window->initialize();
-        qDebug() << "[RViz] Render window initialized";
-    } else {
-        qWarning() << "[RViz] WARNING: render_window is null!";
-    }
-
     qDebug() << "[RViz] Step 6: Initializing manager...";
+    fflush(stdout);
 
-    // 3. 初始化管理器
+    // 初始化管理器
     manager_->initialize();
 
     qDebug() << "[RViz] Step 7: Starting update...";
+    fflush(stdout);
+
     manager_->startUpdate();
 
-    // 4. 设置固定帧
+    // 设置固定帧
     manager_->setFixedFrame("base_link");
 
     qDebug() << "[RViz] Setup completed!";
+    fflush(stdout);
 }
 
 void RvizPanel::addRobotModel(const std::string& robot_description_topic)
