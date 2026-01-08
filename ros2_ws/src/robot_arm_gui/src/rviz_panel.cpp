@@ -34,17 +34,22 @@ public:
     explicit RosNodeAbstractionWrapper(rclcpp::Node::SharedPtr node)
         : node_(node)
     {}
-    
+
     std::string get_node_name() const override {
         return node_->get_name();
     }
-    
-    std::string get_namespace() const {
+
+    std::string get_namespace() const override {
         return node_->get_namespace();
     }
-    
+
     rclcpp::Node::SharedPtr get_raw_node() override {
         return node_;
+    }
+
+    // 实现缺失的纯虚函数 get_topic_names_and_types
+    std::map<std::string, std::vector<std::string>> get_topic_names_and_types() const override {
+        return node_->get_topic_names_and_types();
     }
 
 private:
