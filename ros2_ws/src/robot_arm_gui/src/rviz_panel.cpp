@@ -122,8 +122,11 @@ void RvizPanel::setupRviz()
     // 创建窗口管理器
     auto window_manager = new DummyWindowManager();
 
-    // 创建 ROS 节点抽象层包装器
-    auto ros_node_abstraction = std::make_shared<RosNodeAbstractionWrapper>(node_);
+    qDebug() << "[RViz] Step 2b: Creating RosNodeAbstraction (official RViz class)...";
+    fflush(stdout);
+
+    // 使用 RViz 官方的 RosNodeAbstraction 类
+    auto ros_node_abstraction = std::make_shared<rviz_common::ros_integration::RosNodeAbstraction>("rviz_embedded");
 
     qDebug() << "[RViz] Step 3: Creating VisualizationManager...";
     qDebug() << "[RViz] render_panel_ = " << (void*)render_panel_;
