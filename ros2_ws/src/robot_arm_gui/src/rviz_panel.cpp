@@ -113,24 +113,7 @@ void RvizPanel::setupRviz()
     render_panel_->show();
     QApplication::processEvents();
 
-    qDebug() << "[RViz] Step 2: Initializing render window FIRST (for Jetson)...";
-    fflush(stdout);
-
-    // 在 Jetson 上，需要先初始化渲染窗口
-    auto render_window = render_panel_->getRenderWindow();
-    if (render_window) {
-        qDebug() << "[RViz] Step 2b: Calling render_window->initialize()...";
-        fflush(stdout);
-        render_window->initialize();
-        qDebug() << "[RViz] Render window initialized";
-        fflush(stdout);
-    } else {
-        qWarning() << "[RViz] WARNING: render_window is null!";
-        fflush(stdout);
-        return;
-    }
-
-    qDebug() << "[RViz] Step 3: Creating clock and window manager...";
+    qDebug() << "[RViz] Step 2: Creating clock and window manager...";
     fflush(stdout);
 
     // 创建时钟
@@ -142,7 +125,11 @@ void RvizPanel::setupRviz()
     // 创建 ROS 节点抽象层包装器
     auto ros_node_abstraction = std::make_shared<RosNodeAbstractionWrapper>(node_);
 
-    qDebug() << "[RViz] Step 4: Creating VisualizationManager...";
+    qDebug() << "[RViz] Step 3: Creating VisualizationManager...";
+    qDebug() << "[RViz] render_panel_ = " << (void*)render_panel_;
+    qDebug() << "[RViz] ros_node_abstraction = " << (void*)ros_node_abstraction.get();
+    qDebug() << "[RViz] window_manager = " << (void*)window_manager;
+    qDebug() << "[RViz] clock = " << (void*)clock.get();
     fflush(stdout);
 
     // 创建 VisualizationManager
@@ -152,11 +139,21 @@ void RvizPanel::setupRviz()
         window_manager,
         clock);
 
-    qDebug() << "[RViz] Step 5: Initializing render_panel with manager...";
+    qDebug() << "[RViz] Step 4: VisualizationManager created, now initializing render_panel...";
     fflush(stdout);
 
     // 用 manager 初始化 render_panel
     render_panel_->initialize(manager_);
+
+    qDebug() << "[RViz] Step 5: Initializing render window...";
+    fflush(stdout);
+
+    // 初始化渲染窗口
+    auto render_window = render_panel_->getRenderWindow();
+    if (render_window) {
+        render_window->initialize();
+        qDebug() << "[RViz] Render window initialized";
+    }
 
     qDebug() << "[RViz] Step 6: Initializing manager...";
     fflush(stdout);
