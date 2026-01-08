@@ -170,12 +170,6 @@ ros2 run robot_arm_gui robot_arm_gui
 ```
 输出如下
 ```bash
-RvizPanel constructor completed
-[RViz] Step 1: Creating RenderPanel...
-NvMapMemAllocInternalTagged: 1075072515 error 12
-NvMapMemHandleAlloc: error 0
-NvMapMemAllocInternalTagged: 1075072515 error 12
-NvMapMemHandleAlloc: error 0
 dxf@ubuntu:~/Desktop/li/ros2_ws$ ros2 run robot_arm_gui robot_arm_gui
 RvizPanel constructor completed
 [RViz] Step 1: Creating RenderPanel...
@@ -184,12 +178,13 @@ RvizPanel constructor completed
 [rviz_rendering:info] OpenGl version: 4.6 (GLSL 4.6), at ./src/rviz_rendering/render_system.cpp:284
 [RViz] Step 1b: Showing RenderPanel...
 [rviz_rendering:info] Stereo is NOT SUPPORTED, at ./src/rviz_rendering/render_system.cpp:543
-[RViz] Step 2: Initializing render window FIRST (for Jetson)...
-[RViz] Step 2b: Calling render_window->initialize()...
-[rviz_rendering:info] Stereo is NOT SUPPORTED, at ./src/rviz_rendering/render_system.cpp:543
-[RViz] Render window initialized
-[RViz] Step 3: Creating clock and window manager...
-[RViz] Step 4: Creating VisualizationManager...
+[RViz] Step 2: Creating clock and window manager...
+[RViz] Step 2b: Creating RosNodeAbstraction (official RViz class)...
+[RViz] Step 3: Creating VisualizationManager...
+[RViz] render_panel_ =  0xaaaae3b20fd0
+[RViz] ros_node_abstraction =  0xaaaae43d8710
+[RViz] window_manager =  0xaaaae43d7290
+[RViz] clock =  0xaaaae3216d60
 [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/TF.svg, at ./src/rviz_common/load_resource.cpp:71
 [rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_default_plugins/icons/classes/TF.svg]: Couldn't open file /opt/ros/humble/share/rviz_default_plugins/icons/classes/TF.svg, at ./src/rviz_common/load_resource.cpp:55
 [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/TF.png, at ./src/rviz_common/load_resource.cpp:71
@@ -202,7 +197,56 @@ RvizPanel constructor completed
 [rviz_common:debug] Load pixmap at package://rviz_common/icons/ok.png, at ./src/rviz_common/load_resource.cpp:71
 [rviz_common:debug] Load pixmap at package://rviz_common/icons/warning.png, at ./src/rviz_common/load_resource.cpp:71
 [rviz_common:debug] Load pixmap at package://rviz_common/icons/error.png, at ./src/rviz_common/load_resource.cpp:71
+[RViz] Step 4: VisualizationManager created, now initializing render_panel...
+[RViz] Step 5: Initializing render window...
+[rviz_rendering:info] Stereo is NOT SUPPORTED, at ./src/rviz_rendering/render_system.cpp:543
+[RViz] Render window initialized
+[RViz] Step 6: Initializing manager...
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/Orbit.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_default_plugins/icons/classes/Orbit.svg]: Couldn't open file /opt/ros/humble/share/rviz_default_plugins/icons/classes/Orbit.svg, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/Orbit.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_default_plugins/icons/classes/Orbit.png]: Couldn't open file /opt/ros/humble/share/rviz_default_plugins/icons/classes/Orbit.png, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/rotate.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/cursor.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/rotate_cam.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/move2d.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/move_z.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/zoom.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/crosshair.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://nav2_rviz_plugins/icons/classes/GoalTool.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/nav2_rviz_plugins/icons/classes/GoalTool.svg]: Couldn't open file /opt/ros/humble/share/nav2_rviz_plugins/icons/classes/GoalTool.svg, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://nav2_rviz_plugins/icons/classes/GoalTool.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/nav2_rviz_plugins/icons/classes/GoalTool.png]: Couldn't open file /opt/ros/humble/share/nav2_rviz_plugins/icons/classes/GoalTool.png, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/FocusCamera.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/Interact.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_default_plugins/icons/classes/Interact.svg]: Couldn't open file /opt/ros/humble/share/rviz_default_plugins/icons/classes/Interact.svg, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/Interact.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/Measure.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/MoveCamera.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_default_plugins/icons/classes/MoveCamera.svg]: Couldn't open file /opt/ros/humble/share/rviz_default_plugins/icons/classes/MoveCamera.svg, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/MoveCamera.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/PublishPoint.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/Select.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_default_plugins/icons/classes/Select.svg]: Couldn't open file /opt/ros/humble/share/rviz_default_plugins/icons/classes/Select.svg, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/Select.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/SetGoal.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_default_plugins/icons/classes/SetGoal.svg]: Couldn't open file /opt/ros/humble/share/rviz_default_plugins/icons/classes/SetGoal.svg, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/SetGoal.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/SetInitialPose.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_default_plugins/icons/classes/SetInitialPose.svg]: Couldn't open file /opt/ros/humble/share/rviz_default_plugins/icons/classes/SetInitialPose.svg, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/SetInitialPose.png, at ./src/rviz_common/load_resource.cpp:71
+[RViz] Step 7: Starting update...
+[RViz] Setup completed!
+RViz panel initialized successfully
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/Grid.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_default_plugins/icons/classes/Grid.svg]: Couldn't open file /opt/ros/humble/share/rviz_default_plugins/icons/classes/Grid.svg, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/Grid.png, at ./src/rviz_common/load_resource.cpp:71
+Grid display added
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/RobotModel.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_default_plugins/icons/classes/RobotModel.svg]: Couldn't open file /opt/ros/humble/share/rviz_default_plugins/icons/classes/RobotModel.svg, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/RobotModel.png, at ./src/rviz_common/load_resource.cpp:71
 [ros2run]: Segmentation fault
+
 
 
 

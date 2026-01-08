@@ -1,0 +1,31 @@
+[0.029s] Invoking command in '/home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui -- -j6 -l6
+[0.225s] [ 14%] [34m[1mAutomatic MOC and UIC for target robot_arm_gui[0m
+[0.329s] [ 14%] Built target robot_arm_gui_autogen
+[0.377s] [35m[1mConsolidate compiler generated dependencies of target robot_arm_gui[0m
+[0.480s] [ 28%] [32mBuilding CXX object CMakeFiles/robot_arm_gui.dir/src/rviz_panel.cpp.o[0m
+[13.160s] [ 42%] [32m[1mLinking CXX executable robot_arm_gui[0m
+[19.467s] [100%] Built target robot_arm_gui
+[19.507s] Invoked command in '/home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui -- -j6 -l6
+[19.537s] Invoking command in '/home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui
+[19.557s] -- Install configuration: ""
+[19.560s] -- Installing: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/lib/robot_arm_gui/robot_arm_gui
+[19.563s] -- Set runtime path of "/home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/lib/robot_arm_gui/robot_arm_gui" to ""
+[19.564s] -- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/launch
+[19.565s] -- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/launch/gui.launch.py
+[19.565s] -- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/launch/full.launch.py
+[19.566s] -- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/ament_index/resource_index/package_run_dependencies/robot_arm_gui
+[19.567s] -- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/ament_index/resource_index/parent_prefix_path/robot_arm_gui
+[19.568s] -- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/environment/ament_prefix_path.sh
+[19.569s] -- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/environment/ament_prefix_path.dsv
+[19.569s] -- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/environment/path.sh
+[19.569s] -- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/environment/path.dsv
+[19.569s] -- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/local_setup.bash
+[19.569s] -- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/local_setup.sh
+[19.570s] -- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/local_setup.zsh
+[19.570s] -- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/local_setup.dsv
+[19.570s] -- Installing: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/package.dsv
+[19.570s] -- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/ament_index/resource_index/packages/robot_arm_gui
+[19.571s] -- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/cmake/robot_arm_guiConfig.cmake
+[19.571s] -- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/cmake/robot_arm_guiConfig-version.cmake
+[19.571s] -- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/package.xml
+[19.578s] Invoked command in '/home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui

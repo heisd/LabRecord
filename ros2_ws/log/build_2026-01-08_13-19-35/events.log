@@ -1,0 +1,234 @@
+[0.000000] (-) TimerEvent: {}
+[0.001367] (-) JobUnselected: {'identifier': 'my_robot_description'}
+[0.001750] (robot_arm_gui) JobQueued: {'identifier': 'robot_arm_gui', 'dependencies': OrderedDict()}
+[0.001880] (robot_arm_gui) JobStarted: {'identifier': 'robot_arm_gui'}
+[0.025162] (robot_arm_gui) JobProgress: {'identifier': 'robot_arm_gui', 'progress': 'cmake'}
+[0.028046] (robot_arm_gui) JobProgress: {'identifier': 'robot_arm_gui', 'progress': 'build'}
+[0.029560] (robot_arm_gui) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui', '--', '-j6', '-l6'], 'cwd': '/home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'dxf'), ('SSH_CLIENT', '192.168.0.211 58057 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/dxf/.antigravity-server/bin/94f91bc110994badc7c086033db813077a5226af/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/opencv410/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/usr/local/opencv410/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/dxf/.antigravity-server/bin/94f91bc110994badc7c086033db813077a5226af/bin/helpers/browser.sh'), ('ANTIGRAVITY_CLI_ALIAS', 'agy'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/dxf'), ('OLDPWD', '/home/dxf/Desktop/li'), ('TERM_PROGRAM_VERSION', '1.104.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-77c220d7-f624-468d-a22d-ac3daaa3c293.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/dxf/.antigravity-server/bin/94f91bc110994badc7c086033db813077a5226af/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/dxf/.antigravity-server/bin/94f91bc110994badc7c086033db813077a5226af/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/dxf/Desktop/li/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dxf'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/opencv410/lib/pkgconfig:/usr/local/opencv410/lib/pkgconfig:'), ('CLAUDE_CODE_SSE_PORT', '27967'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '26'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/dxf/.antigravity-server/bin/94f91bc110994badc7c086033db813077a5226af/bin/remote-cli:/home/dxf/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6056563ebd.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/home/dxf/.antigravity-server/.94f91bc110994badc7c086033db813077a5226af-ssh-auth.sock'), ('AMENT_PREFIX_PATH', '/home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('OpenCV_DIR', '/usr/local/opencv410/lib/cmake/opencv4'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui'), ('ENABLE_IDE_INTEGRATION', 'true'), ('SSH_CONNECTION', '192.168.0.211 58057 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui:/usr/local/opencv410:/usr/local/opencv410::/opt/ros/humble')]), 'shell': False}
+[0.099417] (-) TimerEvent: {}
+[0.200116] (-) TimerEvent: {}
+[0.226389] (robot_arm_gui) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target robot_arm_gui\x1b[0m\n'}
+[0.300315] (-) TimerEvent: {}
+[0.330507] (robot_arm_gui) StdoutLine: {'line': b'[ 14%] Built target robot_arm_gui_autogen\n'}
+[0.378175] (robot_arm_gui) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_arm_gui\x1b[0m\n'}
+[0.400486] (-) TimerEvent: {}
+[0.481752] (robot_arm_gui) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/robot_arm_gui.dir/src/rviz_panel.cpp.o\x1b[0m\n'}
+[0.500671] (-) TimerEvent: {}
+[0.601473] (-) TimerEvent: {}
+[0.702222] (-) TimerEvent: {}
+[0.802906] (-) TimerEvent: {}
+[0.903627] (-) TimerEvent: {}
+[1.004511] (-) TimerEvent: {}
+[1.105405] (-) TimerEvent: {}
+[1.206332] (-) TimerEvent: {}
+[1.307199] (-) TimerEvent: {}
+[1.408067] (-) TimerEvent: {}
+[1.508929] (-) TimerEvent: {}
+[1.609795] (-) TimerEvent: {}
+[1.710678] (-) TimerEvent: {}
+[1.811537] (-) TimerEvent: {}
+[1.912403] (-) TimerEvent: {}
+[2.013199] (-) TimerEvent: {}
+[2.113969] (-) TimerEvent: {}
+[2.214681] (-) TimerEvent: {}
+[2.315523] (-) TimerEvent: {}
+[2.416405] (-) TimerEvent: {}
+[2.517278] (-) TimerEvent: {}
+[2.618190] (-) TimerEvent: {}
+[2.719069] (-) TimerEvent: {}
+[2.819951] (-) TimerEvent: {}
+[2.920838] (-) TimerEvent: {}
+[3.021768] (-) TimerEvent: {}
+[3.122635] (-) TimerEvent: {}
+[3.223528] (-) TimerEvent: {}
+[3.324413] (-) TimerEvent: {}
+[3.425302] (-) TimerEvent: {}
+[3.526197] (-) TimerEvent: {}
+[3.627176] (-) TimerEvent: {}
+[3.728067] (-) TimerEvent: {}
+[3.828953] (-) TimerEvent: {}
+[3.929768] (-) TimerEvent: {}
+[4.030549] (-) TimerEvent: {}
+[4.131313] (-) TimerEvent: {}
+[4.232198] (-) TimerEvent: {}
+[4.333129] (-) TimerEvent: {}
+[4.434044] (-) TimerEvent: {}
+[4.534951] (-) TimerEvent: {}
+[4.635878] (-) TimerEvent: {}
+[4.736773] (-) TimerEvent: {}
+[4.837726] (-) TimerEvent: {}
+[4.938655] (-) TimerEvent: {}
+[5.039544] (-) TimerEvent: {}
+[5.140425] (-) TimerEvent: {}
+[5.241195] (-) TimerEvent: {}
+[5.342119] (-) TimerEvent: {}
+[5.442994] (-) TimerEvent: {}
+[5.543853] (-) TimerEvent: {}
+[5.644722] (-) TimerEvent: {}
+[5.745641] (-) TimerEvent: {}
+[5.846461] (-) TimerEvent: {}
+[5.947222] (-) TimerEvent: {}
+[6.047968] (-) TimerEvent: {}
+[6.148737] (-) TimerEvent: {}
+[6.249651] (-) TimerEvent: {}
+[6.350509] (-) TimerEvent: {}
+[6.451368] (-) TimerEvent: {}
+[6.552224] (-) TimerEvent: {}
+[6.653083] (-) TimerEvent: {}
+[6.753960] (-) TimerEvent: {}
+[6.854864] (-) TimerEvent: {}
+[6.955600] (-) TimerEvent: {}
+[7.056385] (-) TimerEvent: {}
+[7.157132] (-) TimerEvent: {}
+[7.258035] (-) TimerEvent: {}
+[7.358781] (-) TimerEvent: {}
+[7.459557] (-) TimerEvent: {}
+[7.560313] (-) TimerEvent: {}
+[7.661186] (-) TimerEvent: {}
+[7.762119] (-) TimerEvent: {}
+[7.863004] (-) TimerEvent: {}
+[7.964046] (-) TimerEvent: {}
+[8.064795] (-) TimerEvent: {}
+[8.165712] (-) TimerEvent: {}
+[8.266589] (-) TimerEvent: {}
+[8.367476] (-) TimerEvent: {}
+[8.468375] (-) TimerEvent: {}
+[8.569274] (-) TimerEvent: {}
+[8.670199] (-) TimerEvent: {}
+[8.771105] (-) TimerEvent: {}
+[8.871980] (-) TimerEvent: {}
+[8.972862] (-) TimerEvent: {}
+[9.073796] (-) TimerEvent: {}
+[9.174664] (-) TimerEvent: {}
+[9.275534] (-) TimerEvent: {}
+[9.376417] (-) TimerEvent: {}
+[9.477306] (-) TimerEvent: {}
+[9.578233] (-) TimerEvent: {}
+[9.679114] (-) TimerEvent: {}
+[9.779969] (-) TimerEvent: {}
+[9.880721] (-) TimerEvent: {}
+[9.981456] (-) TimerEvent: {}
+[10.082325] (-) TimerEvent: {}
+[10.183225] (-) TimerEvent: {}
+[10.284064] (-) TimerEvent: {}
+[10.384803] (-) TimerEvent: {}
+[10.485689] (-) TimerEvent: {}
+[10.586536] (-) TimerEvent: {}
+[10.687333] (-) TimerEvent: {}
+[10.788225] (-) TimerEvent: {}
+[10.889113] (-) TimerEvent: {}
+[10.990392] (-) TimerEvent: {}
+[11.091267] (-) TimerEvent: {}
+[11.192132] (-) TimerEvent: {}
+[11.292887] (-) TimerEvent: {}
+[11.393745] (-) TimerEvent: {}
+[11.494820] (-) TimerEvent: {}
+[11.595723] (-) TimerEvent: {}
+[11.696716] (-) TimerEvent: {}
+[11.797577] (-) TimerEvent: {}
+[11.898356] (-) TimerEvent: {}
+[11.999224] (-) TimerEvent: {}
+[12.100113] (-) TimerEvent: {}
+[12.200988] (-) TimerEvent: {}
+[12.301869] (-) TimerEvent: {}
+[12.402739] (-) TimerEvent: {}
+[12.503614] (-) TimerEvent: {}
+[12.604509] (-) TimerEvent: {}
+[12.705530] (-) TimerEvent: {}
+[12.806438] (-) TimerEvent: {}
+[12.907317] (-) TimerEvent: {}
+[13.008392] (-) TimerEvent: {}
+[13.109121] (-) TimerEvent: {}
+[13.160629] (robot_arm_gui) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX executable robot_arm_gui\x1b[0m\n'}
+[13.209359] (-) TimerEvent: {}
+[13.310500] (-) TimerEvent: {}
+[13.411267] (-) TimerEvent: {}
+[13.512030] (-) TimerEvent: {}
+[13.612800] (-) TimerEvent: {}
+[13.714085] (-) TimerEvent: {}
+[13.814843] (-) TimerEvent: {}
+[13.915730] (-) TimerEvent: {}
+[14.016600] (-) TimerEvent: {}
+[14.117505] (-) TimerEvent: {}
+[14.218417] (-) TimerEvent: {}
+[14.319288] (-) TimerEvent: {}
+[14.420185] (-) TimerEvent: {}
+[14.521084] (-) TimerEvent: {}
+[14.622032] (-) TimerEvent: {}
+[14.722966] (-) TimerEvent: {}
+[14.823859] (-) TimerEvent: {}
+[14.924792] (-) TimerEvent: {}
+[15.025772] (-) TimerEvent: {}
+[15.126714] (-) TimerEvent: {}
+[15.227456] (-) TimerEvent: {}
+[15.328237] (-) TimerEvent: {}
+[15.429146] (-) TimerEvent: {}
+[15.530078] (-) TimerEvent: {}
+[15.630912] (-) TimerEvent: {}
+[15.731765] (-) TimerEvent: {}
+[15.832623] (-) TimerEvent: {}
+[15.933523] (-) TimerEvent: {}
+[16.034988] (-) TimerEvent: {}
+[16.135896] (-) TimerEvent: {}
+[16.236836] (-) TimerEvent: {}
+[16.337781] (-) TimerEvent: {}
+[16.438709] (-) TimerEvent: {}
+[16.539642] (-) TimerEvent: {}
+[16.640536] (-) TimerEvent: {}
+[16.741455] (-) TimerEvent: {}
+[16.842590] (-) TimerEvent: {}
+[16.943346] (-) TimerEvent: {}
+[17.044071] (-) TimerEvent: {}
+[17.144822] (-) TimerEvent: {}
+[17.245781] (-) TimerEvent: {}
+[17.346842] (-) TimerEvent: {}
+[17.448015] (-) TimerEvent: {}
+[17.548781] (-) TimerEvent: {}
+[17.649514] (-) TimerEvent: {}
+[17.750335] (-) TimerEvent: {}
+[17.851270] (-) TimerEvent: {}
+[17.952184] (-) TimerEvent: {}
+[18.053093] (-) TimerEvent: {}
+[18.154091] (-) TimerEvent: {}
+[18.255017] (-) TimerEvent: {}
+[18.355940] (-) TimerEvent: {}
+[18.456844] (-) TimerEvent: {}
+[18.557758] (-) TimerEvent: {}
+[18.658745] (-) TimerEvent: {}
+[18.759550] (-) TimerEvent: {}
+[18.860249] (-) TimerEvent: {}
+[18.960991] (-) TimerEvent: {}
+[19.061858] (-) TimerEvent: {}
+[19.162743] (-) TimerEvent: {}
+[19.263605] (-) TimerEvent: {}
+[19.364356] (-) TimerEvent: {}
+[19.465067] (-) TimerEvent: {}
+[19.468306] (robot_arm_gui) StdoutLine: {'line': b'[100%] Built target robot_arm_gui\n'}
+[19.507801] (robot_arm_gui) CommandEnded: {'returncode': 0}
+[19.512267] (robot_arm_gui) JobProgress: {'identifier': 'robot_arm_gui', 'progress': 'install'}
+[19.536675] (robot_arm_gui) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui'], 'cwd': '/home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'dxf'), ('SSH_CLIENT', '192.168.0.211 58057 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/dxf/.antigravity-server/bin/94f91bc110994badc7c086033db813077a5226af/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/opencv410/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/usr/local/opencv410/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/dxf/.antigravity-server/bin/94f91bc110994badc7c086033db813077a5226af/bin/helpers/browser.sh'), ('ANTIGRAVITY_CLI_ALIAS', 'agy'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/dxf'), ('OLDPWD', '/home/dxf/Desktop/li'), ('TERM_PROGRAM_VERSION', '1.104.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-77c220d7-f624-468d-a22d-ac3daaa3c293.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/dxf/.antigravity-server/bin/94f91bc110994badc7c086033db813077a5226af/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/dxf/.antigravity-server/bin/94f91bc110994badc7c086033db813077a5226af/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/dxf/Desktop/li/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dxf'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/opencv410/lib/pkgconfig:/usr/local/opencv410/lib/pkgconfig:'), ('CLAUDE_CODE_SSE_PORT', '27967'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '26'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/dxf/.antigravity-server/bin/94f91bc110994badc7c086033db813077a5226af/bin/remote-cli:/home/dxf/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6056563ebd.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/home/dxf/.antigravity-server/.94f91bc110994badc7c086033db813077a5226af-ssh-auth.sock'), ('AMENT_PREFIX_PATH', '/home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('OpenCV_DIR', '/usr/local/opencv410/lib/cmake/opencv4'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/dxf/Desktop/li/ros2_ws/build/robot_arm_gui'), ('ENABLE_IDE_INTEGRATION', 'true'), ('SSH_CONNECTION', '192.168.0.211 58057 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui:/usr/local/opencv410:/usr/local/opencv410::/opt/ros/humble')]), 'shell': False}
+[19.558733] (robot_arm_gui) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[19.561206] (robot_arm_gui) StdoutLine: {'line': b'-- Installing: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/lib/robot_arm_gui/robot_arm_gui\n'}
+[19.565043] (robot_arm_gui) StdoutLine: {'line': b'-- Set runtime path of "/home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/lib/robot_arm_gui/robot_arm_gui" to ""\n'}
+[19.565517] (-) TimerEvent: {}
+[19.565822] (robot_arm_gui) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/launch\n'}
+[19.566322] (robot_arm_gui) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/launch/gui.launch.py\n'}
+[19.566640] (robot_arm_gui) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/launch/full.launch.py\n'}
+[19.568046] (robot_arm_gui) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/ament_index/resource_index/package_run_dependencies/robot_arm_gui\n'}
+[19.568501] (robot_arm_gui) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/ament_index/resource_index/parent_prefix_path/robot_arm_gui\n'}
+[19.570066] (robot_arm_gui) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/environment/ament_prefix_path.sh\n'}
+[19.570445] (robot_arm_gui) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/environment/ament_prefix_path.dsv\n'}
+[19.570740] (robot_arm_gui) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/environment/path.sh\n'}
+[19.570959] (robot_arm_gui) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/environment/path.dsv\n'}
+[19.571144] (robot_arm_gui) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/local_setup.bash\n'}
+[19.571299] (robot_arm_gui) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/local_setup.sh\n'}
+[19.571447] (robot_arm_gui) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/local_setup.zsh\n'}
+[19.571595] (robot_arm_gui) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/local_setup.dsv\n'}
+[19.571786] (robot_arm_gui) StdoutLine: {'line': b'-- Installing: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/package.dsv\n'}
+[19.572129] (robot_arm_gui) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/ament_index/resource_index/packages/robot_arm_gui\n'}
+[19.572531] (robot_arm_gui) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/cmake/robot_arm_guiConfig.cmake\n'}
+[19.572743] (robot_arm_gui) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/cmake/robot_arm_guiConfig-version.cmake\n'}
+[19.572934] (robot_arm_gui) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/Desktop/li/ros2_ws/install/robot_arm_gui/share/robot_arm_gui/package.xml\n'}
+[19.578377] (robot_arm_gui) CommandEnded: {'returncode': 0}
+[19.643660] (robot_arm_gui) JobEnded: {'identifier': 'robot_arm_gui', 'rc': 0}
+[19.645969] (-) EventReactorShutdown: {}
