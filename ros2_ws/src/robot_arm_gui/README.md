@@ -181,10 +181,10 @@ RvizPanel constructor completed
 [RViz] Step 2: Creating clock and window manager...
 [RViz] Step 2b: Creating RosNodeAbstraction (official RViz class)...
 [RViz] Step 3: Creating VisualizationManager...
-[RViz] render_panel_ =  0xaaaae3b20fd0
-[RViz] ros_node_abstraction =  0xaaaae43d8710
-[RViz] window_manager =  0xaaaae43d7290
-[RViz] clock =  0xaaaae3216d60
+[RViz] render_panel_ =  0xaaab1308bcd0
+[RViz] ros_node_abstraction =  0xaaab1308bac0
+[RViz] window_manager =  0xaaab13b27b10
+[RViz] clock =  0xaaab1277dd60
 [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/TF.svg, at ./src/rviz_common/load_resource.cpp:71
 [rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_default_plugins/icons/classes/TF.svg]: Couldn't open file /opt/ros/humble/share/rviz_default_plugins/icons/classes/TF.svg, at ./src/rviz_common/load_resource.cpp:55
 [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/TF.png, at ./src/rviz_common/load_resource.cpp:71
@@ -242,10 +242,15 @@ RViz panel initialized successfully
 [rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_default_plugins/icons/classes/Grid.svg]: Couldn't open file /opt/ros/humble/share/rviz_default_plugins/icons/classes/Grid.svg, at ./src/rviz_common/load_resource.cpp:55
 [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/Grid.png, at ./src/rviz_common/load_resource.cpp:71
 Grid display added
+[RobotModel] Starting addRobotModel...
+[RobotModel] Creating RobotModel display...
 [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/RobotModel.svg, at ./src/rviz_common/load_resource.cpp:71
 [rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_default_plugins/icons/classes/RobotModel.svg]: Couldn't open file /opt/ros/humble/share/rviz_default_plugins/icons/classes/RobotModel.svg, at ./src/rviz_common/load_resource.cpp:55
 [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/RobotModel.png, at ./src/rviz_common/load_resource.cpp:71
+[RobotModel] Display created:  0xaaab13c3c500
+[RobotModel] Setting Description Topic...
 [ros2run]: Segmentation fault
+
 
 
 

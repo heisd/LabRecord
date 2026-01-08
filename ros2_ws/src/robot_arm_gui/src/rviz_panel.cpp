@@ -186,27 +186,60 @@ void RvizPanel::setupRviz()
 
 void RvizPanel::addRobotModel(const std::string& robot_description_topic)
 {
+    qDebug() << "[RobotModel] Starting addRobotModel...";
+    fflush(stdout);
+
     if (!manager_) {
         qWarning() << "Manager not initialized";
         return;
     }
-    
+
     try {
+        qDebug() << "[RobotModel] Creating RobotModel display...";
+        fflush(stdout);
+
         // 创建 RobotModel 显示
         auto display = manager_->createDisplay(
             "rviz_default_plugins/RobotModel",
             "RobotModel",
             true);  // enabled
-        
+
+        qDebug() << "[RobotModel] Display created: " << (void*)display;
+        fflush(stdout);
+
         if (display) {
-            // 设置属性
-            display->subProp("Description Topic")->setValue(
-                QString::fromStdString(robot_description_topic));
-            display->subProp("Visual Enabled")->setValue(true);
-            display->subProp("Collision Enabled")->setValue(false);
-            display->subProp("Alpha")->setValue(1.0);
-            
+            qDebug() << "[RobotModel] Setting Description Topic...";
+            fflush(stdout);
+
+            // 检查属性是否存在
+            auto desc_prop = display->subProp("Description Topic");
+            if (desc_prop) {
+                desc_prop->setValue(QString::fromStdString(robot_description_topic));
+                qDebug() << "[RobotModel] Description Topic set";
+            } else {
+                qWarning() << "[RobotModel] Description Topic property not found!";
+            }
+            fflush(stdout);
+
+            qDebug() << "[RobotModel] Setting Visual Enabled...";
+            fflush(stdout);
+            auto vis_prop = display->subProp("Visual Enabled");
+            if (vis_prop) vis_prop->setValue(true);
+
+            qDebug() << "[RobotModel] Setting Collision Enabled...";
+            fflush(stdout);
+            auto col_prop = display->subProp("Collision Enabled");
+            if (col_prop) col_prop->setValue(false);
+
+            qDebug() << "[RobotModel] Setting Alpha...";
+            fflush(stdout);
+            auto alpha_prop = display->subProp("Alpha");
+            if (alpha_prop) alpha_prop->setValue(1.0);
+
             qDebug() << "RobotModel display added";
+            fflush(stdout);
+        } else {
+            qWarning() << "[RobotModel] Failed to create display!";
         }
     } catch (const std::exception& e) {
         qWarning() << "Failed to add RobotModel:" << e.what();
