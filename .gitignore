@@ -1,0 +1,25 @@
+# ROS 2 / colcon build artifacts
+build/
+install/
+log/
+**/build/
+**/install/
+**/log/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# C/C++
+*.o
+*.so
+*.a
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Local tools/cache
+.trae/
